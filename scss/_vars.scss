@@ -1,107 +1,101 @@
-/*$Butler: 'Butler',
-sans-serif;*/
+$Rubik: 'Rubik',
+sans-serif;
+
+$pfsquaresanspro: 'pfsquaresanspro',sans-serif;
+
+// $hover2: red;
 
 $active: #fb0909;
+$ac: #ff8000;
 $focus:#14B4BE;
-$hover:#000010;
+$title: #436372;
 
-
-$ac: #fcd7b6;
+$orange: #FF9900;
+$orange1: #eb6924;
+$orange2: #ff6500;
 
 $white: #FFFFFF;
+$white1:#fff2e5;
+$white2:#f0f0f0;
+$white3:#f6f7f8;
+$white4:#f4f8fe;
+$white5:#cdd4dc;
+$white6:#f9f8f8;
+$white7:#fbfbfb;
+$white8:#efefef;
+
+
+
+
+
+$silver:#858585;
+$silver1:#f0f0f0;
+$silver2:#eeeeee;
+$silver3:#7b7b7b;
+$silver4:#f7f7f7;
+$silver5:#737c80;
+$silver6:#cfcfcf;
+$silver7:#ededed;
+
+
+
+
+
+
+
 $black: #000000;
-$title: #436372;
-$btn-menu:silver;
+$black1: #4a4a4a;
+$black2: #3d4143;
+$black3:#2a2c35;
+
+$green1: #aadc77;
+$green2:#d2ecb9;
+$green3:#0cab46;
+$green4:#8aab64;
+
+$section:100px;/*100*/
+$title-margin: 30px;
+
+
+
+
+@mixin line-clamp-box($line-clamp, ) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin line-clamp-inline($line-clamp, ) {
+    display: -webkit-inline-flex;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin line-clamp-one($max-width, ) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    max-width: $max-width;
+}
+
 
 /*$ac: #fcd7b6;
 
 /*accent*/
-// $orange: #FF9900;
-// $green:#14B4BE;
-// $green:#14B4BE;
-// $antique:#fde7d3;
-// $default: #243f4d;
-// $Cream: #feefe2;
-// $Crayola: #c2d2db;
-// $red: #e72828;
-// $red1 :#fe3e57;
-// $orange: #ffa500;
-
-
-//section
-$padding-main:100px;
-$padding-1200:60px;
-$padding-992:50px; //70
-$padding-768:40px; //50
-$padding-576:30px;
-
-// @mixin line-clamp-box($line-clamp, ) {
-//     display: -webkit-box;
-//     -webkit-line-clamp: $line-clamp;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-// }
-
-// @mixin line-clamp-inline($line-clamp, ) {
-//     display: -webkit-inline-flex;
-//     -webkit-line-clamp: $line-clamp;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-// }
-
-// @mixin line-clamp-one($max-width, ) {
-//     white-space: nowrap;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: block;
-//     max-width: $max-width;
-// }
-
-// @mixin line-height($font-size, $line-height, ) {
-//     line-height: ($line-height / $font-size)
-// }
-
-
-// @mixin clamp($font-size,
-//     $line-height,
-//     $lines-to-show) {
-//     // display: block; // Fallback for non-webkit browsers
-//     display: -webkit-box;
-//     font-size: rem($font-size);
-//     max-height: rem(($font-size * $line-height * $lines-to-show)); // Fallback for non-webkit browsers
-//     line-height: $line-height;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     -webkit-box-orient: vertical;
-//     -webkit-line-clamp: $lines-to-show;
-// }
-
-// @mixin line-clamp($line-clamp, ) {
-//     display: -webkit-box;
-//     -webkit-line-clamp: $line-clamp;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-    
-// }
-
-// @mixin line-height($font-size, $line-height, ) {
-
-//     line-height: ( $line-height / $font-size)
-// }
 /*
-@include clamp(5);
+$antique:#fde7d3;
+$default: #243f4d;
+$title: #436372;
+$Cream: #feefe2;
+$Crayola: #c2d2db;
+$red: #e72828;
+$red1 :#fe3e57;
+$orange: #ffa500;
+
+$active: #fb0909;
+$ac: #fcd7b6;
+$green:#14B4BE;
 */
-
-// $browser-context: 16;
-
-// @function em($pixels, $context: $browser-context) {
-//   @if (unitless($pixels)) {
-//     $pixels: $pixels * 1px;
-//   }
-
-//   @if (unitless($context)) {
-//     $context: $context * 1px;
-//   }
-
-//   @return $pixels / $context * 1em;
-// }

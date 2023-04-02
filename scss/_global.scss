@@ -3,16 +3,19 @@ body {
     height: 100%;
 }
 
-/*
 body {
-    font-size: 16px;
-    line-height: 1;
-    color: $default;
-    @extend %dmsans-700px;
-    letter-spacing: 0.6px;
+    // font-size: 16px;
+    // line-height: 1;
+    // color: $default;
+    font-family: $pfsquaresanspro;
+    font-weight: 400;
+    // letter-spacing: 0.6px;
     display: flex;
     flex-direction: column;
-}*/
+    background-color: #f7f7f7;
+}
+
+/*проверить потом*/
 
 .sr-only {
     position: absolute;
@@ -26,81 +29,47 @@ body {
     border: 0;
 }
 
-/*
 .title {
-    @extend %title;
-}*/
+    z-index: 999;
+    font-weight: 500;
+    font-size: 28px;
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 1;
+
+    // @include line-clamp-one(400px);
+    // @include line-clamp-inline(1);
+    // margin: 0 auto;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: contain;
+    //     z-index: -999;
+    // }
+}
 
 .main {
     flex-grow: 1;
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
-}
 
-.title {
-    // font-size: 36px;
-    // text-align: center;
-    // letter-spacing: 0.04em;
-    // text-transform: uppercase;
-    // color: $black3;
-
-    @media (max-width: 1200px) {
-        font-size: 34px;
-    }
-
-    @media (max-width: 992px) {
-        font-size: 32px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-
-    @media (max-width: 576px) {
-        font-size: 26px;
-    }
-
-    &--bem {
-        margin-bottom: 70px;
-
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-        }
-
-        @media (max-width: 992px) {
-            margin-bottom: 50px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 576px) {
-            margin-bottom: 30px;
-        }
+    &--sm {
+        max-width: 960px;
     }
 }
 
-.section {
-    &--bem {
-        padding: $padding-main 0;
-
-        @media (max-width: 992px) {
-            padding: $padding-992 0;
-        }
-
-        @media (max-width: 768px) {
-            padding: $padding-768 0;
-        }
-
-        @media (max-width: 576px) {
-            padding: $padding-576 0;
-        }
-    }
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
 }
 
-// footer__link--indent
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}

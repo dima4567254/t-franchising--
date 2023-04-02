@@ -1,64 +1,3 @@
-// var mixer = mixitup('.slider-content');
-
-$('.vacancies__box').on('click', function () {
-    $('.vacancies__list').slideToggle();
-});
-// alert("1");
-
-
-// $(function () {
-//     modalWindow.addEventListener('click', (e) => {
-//         const isModal = e.target.closest('.vacancies__list'); /*если клик в любое место кроме .modal__inner то окно закрывается */
-//         if (!isModal) {
-//             modalWindow.classList.remove('vacancies__display');
-//         }
-//     })
-//     buttonModal.addEventListener('click', () => {
-//         modalWindow.classList.add('vacancies__display'); /*добовляем класс*/
-//     });
-
-//     const modalWindow = document.querySelector('.vacancies__list');
-
-
-// })
-// });
-
-//     /*добовляем класс*/
-// });
-// alert("2");
-$(".content").mCustomScrollbar({
-    theme: "minimal-dark",
-    // autoHideScrollbar: "false",
-    autoHideScrollbar: "true",
-    // autoHideScrollbar: "boolean",
-    //  autoHideScrollbar: " boolean true",
-    // theme: "light-thick",
-    // theme: "rounded-dots",
-    // theme: "light-3",//+
-    // theme: "3d-thick"
-    // theme: "rounded-dark",
-    // theme: "3d",
-    // theme: "dark-thin",//+
-});
-
-
-// $(function name(params) {
-//     document.querySelectorAll('body').forEach(function (element) {
-//         //закрываем окно на кнопке закрыть
-//         element.onclick = closeModal;
-//     });
-//     document.querySelectorAll('.vacancies__list').forEach(function (element) {
-//         //закрываем окно на клике в области серой
-//         element.onclick = closeModal;
-//     });
-//     function closeModal() {
-//         document.querySelectorAll('.vacancies__list').forEach(function (element) {
-//             element.classList.add('hide');
-//         });
-//         document.onkeydown = null;
-//     }
-// });
-// alert("3");
 $(function name(params) {
     const swiper = new Swiper('.swiper', {
         // slidesPerView: 1,
@@ -73,6 +12,45 @@ $(function name(params) {
             prevEl: ".swiper-button-prev",
         },
     });
+
+    // $('.vacancies__box').on('click', function () {
+    //     $('.vacancies__list').slideToggle();
+    // });
+
+    $(".content").mCustomScrollbar({
+        // theme: "minimal-dark",
+        // autoHideScrollbar: "false",
+        autoHideScrollbar: "true",
+        // autoHideScrollbar: "boolean",
+        //  autoHideScrollbar: " boolean true",
+        // theme: "light-thick",
+        // theme: "rounded-dots",
+        theme: "light-3",//+
+        // theme: "3d-thick"
+        // theme: "rounded-dark",
+        // theme: "3d",
+        // theme: "dark-thin",//+
+    });
+
+
+    // $(function name(params) {
+    //     document.querySelectorAll('body').forEach(function (element) {
+    //         //закрываем окно на кнопке закрыть
+    //         element.onclick = closeModal;
+    //     });
+    //     document.querySelectorAll('.vacancies__list').forEach(function (element) {
+    //         //закрываем окно на клике в области серой
+    //         element.onclick = closeModal;
+    //     });
+    //     function closeModal() {
+    //         document.querySelectorAll('.vacancies__list').forEach(function (element) {
+    //             element.classList.add('hide');
+    //         });
+    //         document.onkeydown = null;
+    //     }
+    // });
+    // alert("3");
+
 
     // alert("4");
     // var $ = require('jquery');
@@ -147,7 +125,7 @@ $(function name(params) {
         });
     });
 
-    
+
     // alert("6");
     $(function () {
 

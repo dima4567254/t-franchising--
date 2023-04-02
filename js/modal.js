@@ -22,3 +22,29 @@ modalWindow.addEventListener('click', (e) => {
     /*добовляем класс*/
 });
 
+$('.vacancies__box').on('click', function () {
+    $('.vacancies__list').slideToggle();
+});
+
+const buttonModals = document.querySelector('.vacancies__box');
+// у добовляется класс
+const modalWindows = document.querySelector('.vacancies__list');
+
+modalWindows.addEventListener('click', (e) => {
+    const isModals = e.target.closest('.div'); /*если клик в любое место кроме .modal__inner то окно закрывается */
+    if (!isModals) {
+        modalWindows.classList.remove('active-modal');
+    }
+    /*добовляем класс*/
+});
+
+buttonModals.addEventListener('click', () => {
+    modalWindows.classList.add('active-modal'); /*добовляем класс*/
+    document.onkeydown = function (event) {
+        if (event.keyCode == 27) {
+            modalWindows.classList.remove('active-modal');
+        }
+    }
+});
+
+

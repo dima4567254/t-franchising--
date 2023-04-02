@@ -1394,7 +1394,7 @@
         max-width: 420px;
         display: none;
         background-color: $white;
-        padding: 0px 10px 35px 35px;
+        padding: 35px 10px 35px 35px;
         //   padding: 35px 10px 35px 35px;
     }
 
@@ -1585,8 +1585,8 @@
 
 .vacancies-demo {
     position: relative;
-    width: 420px;
-    height: 540px;
+    // width: 420px;
+    // height: 540px;
     overflow: overlay;
 }
 

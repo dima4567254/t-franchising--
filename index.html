@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon"> -->
     <title>Франчайзинг</title>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -114,7 +114,7 @@
                         Brandbook
                     </a>
                     <!-- class="nav__button modal-show modals modal-shows" data-modal="#sign-in" -->
-                    <button class="modal-show" data-modal="#sign-in">
+                    <button class="modal-show nav__button" data-modal="#sign-in">
                         подать заявку
                     </button>
                     <!-- <button class="modal-show" data-modal="#sign-in">show window</button> -->
@@ -131,7 +131,7 @@
                         <!-- modal hide -->
                         <!-- class="modal-wrap" -->
                         <div class="modal-modal">
-                            <button class="modal-close">
+                            <button class="modal-close ">
                                 <svg class="modal__svg" width="19px" height="19px" fill="#bbbbbb">
                                     <use xlink:href="images/icons/sprite.svg#close-3">
                                     </use>
@@ -782,6 +782,7 @@
                 <div class="swiper-wrapper">
                     <div class=" swiper-slide">
                         <ul class="slider-content__items slider-content ">
+                            <!-- переделать в просто итемс -->
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/1.png"
@@ -1518,94 +1519,100 @@
                                 Выбирай вакансию и отправляй резюме
                             </p>
                         </div>
-                        <div class="vacancies__box ">Менеджер по туризму</div>
-                        <div class="vacancies__list vacancies-demo scroller dragscroll content">
-                            <h3 class="vacancies__subtitle">Обязанности:</h3>
-                            <ul class="vacancies__items">
-                                <li>
-                                    Качественная консультация по продукту компании (гостиничная база страны, специфика
-                                    курортов,
-                                    экскурсионная программа и т.д.)
-                                </li>
-                                <li>
-                                    Продажа туров туристам и документальное сопровождение
-                                </li>
-                                <li>
-                                    Бронирование стандартных и нестандартных заявок по направлениям компании
-                                </li>
-                                <li>
-                                    Продажа страховок
-                                </li>
-                            </ul>
-                            <h3 class="vacancies__subtitle">Требования:</h3>
-                            <ul class="vacancies__items">
-                                <li>
-                                    Профильное образование – желательно, но необязательно
-                                </li>
-                                <li>
-                                    Опыт работы менеджером по туризму – от 1 года
-                                </li>
-                                <li>
-                                    Опыт просчета индивидуальных заявок
-                                </li>
-                                <li>
-                                    Знание туристических, преимущественно массовых направлений компании
-                                </li>
-                                <li>
-                                    Опыт участия в рекламных турах станет дополнительным преимуществом
-                                </li>
-                                <li>
-                                    Грамотный язык (украинский, русский)
-                                </li>
-                                <li>
-                                    Уверенное знание MS Office
-                                </li>
-                                <li>
-                                    Знание английского языка – желательно
-                                </li>
-                            </ul>
-                            <h3 class="vacancies__subtitle">Личные характеристики:</h3>
-                            <ul class="vacancies__items">
-                                <li>
-                                    Клиентоориентированность
-                                </li>
-                                <li>
-                                    Доброжелательность и вежливость
-                                </li>
-                                <li>
-                                    Стрессоустойчивость
-                                </li>
-                                <li>
-                                    Ответственность
-                                </li>
-                            </ul>
-                            <h3 class="vacancies__subtitle"> Компания предлагает:</h3>
-                            <ul class="vacancies__items">
-                                <li>
-                                    Официальное оформление, согласно КЗоТу Украины
-                                </li>
-                                <li>
-                                    Оплачиваемый отпуск (24 дня)
-                                </li>
-                                <li>
-                                    Удобный график работы
-                                </li>
-                                <li>
-                                    Участие в рекламных турах
-                                </li>
-                                <li>
-                                    Комфортный офис
-                                </li>
-                                <li>
-                                    Отправить резюме
-                                </li>
-                            </ul>
-                            <!-- href="mailto:franchise@joinup.ua" -->
-                            <a class="vacancies__link" href="mailto:contact@franchise.com">Отправить резюме</a>
+                        <div class="">
+                            <div class="vacancies__box ">Менеджер по туризму</div>
+                            <!-- <div class="div"> -->
+                            <div class="vacancies__list dragscroll content  vacancies-demo">
+                                <!-- vacancies-demo+  content dragscroll 
+    content только и за того что там это так называется-->
+                                <h3 class="vacancies__subtitle">Обязанности:</h3>
+                                <ul class="vacancies__items">
+                                    <li>
+                                        Качественная консультация по продукту компании (гостиничная база страны,
+                                        специфика
+                                        курортов,
+                                        экскурсионная программа и т.д.)
+                                    </li>
+                                    <li>
+                                        Продажа туров туристам и документальное сопровождение
+                                    </li>
+                                    <li>
+                                        Бронирование стандартных и нестандартных заявок по направлениям компании
+                                    </li>
+                                    <li>
+                                        Продажа страховок
+                                    </li>
+                                </ul>
+                                <h3 class="vacancies__subtitle">Требования:</h3>
+                                <ul class="vacancies__items">
+                                    <li>
+                                        Профильное образование – желательно, но необязательно
+                                    </li>
+                                    <li>
+                                        Опыт работы менеджером по туризму – от 1 года
+                                    </li>
+                                    <li>
+                                        Опыт просчета индивидуальных заявок
+                                    </li>
+                                    <li>
+                                        Знание туристических, преимущественно массовых направлений компании
+                                    </li>
+                                    <li>
+                                        Опыт участия в рекламных турах станет дополнительным преимуществом
+                                    </li>
+                                    <li>
+                                        Грамотный язык (украинский, русский)
+                                    </li>
+                                    <li>
+                                        Уверенное знание MS Office
+                                    </li>
+                                    <li>
+                                        Знание английского языка – желательно
+                                    </li>
+                                </ul>
+                                <h3 class="vacancies__subtitle">Личные характеристики:</h3>
+                                <ul class="vacancies__items">
+                                    <li>
+                                        Клиентоориентированность
+                                    </li>
+                                    <li>
+                                        Доброжелательность и вежливость
+                                    </li>
+                                    <li>
+                                        Стрессоустойчивость
+                                    </li>
+                                    <li>
+                                        Ответственность
+                                    </li>
+                                </ul>
+                                <h3 class="vacancies__subtitle"> Компания предлагает:</h3>
+                                <ul class="vacancies__items">
+                                    <li>
+                                        Официальное оформление, согласно КЗоТу Украины
+                                    </li>
+                                    <li>
+                                        Оплачиваемый отпуск (24 дня)
+                                    </li>
+                                    <li>
+                                        Удобный график работы
+                                    </li>
+                                    <li>
+                                        Участие в рекламных турах
+                                    </li>
+                                    <li>
+                                        Комфортный офис
+                                    </li>
+                                    <li>
+                                        Отправить резюме
+                                    </li>
+                                </ul>
+                                <!-- href="mailto:franchise@joinup.ua" -->
+                                <a class="vacancies__link" href="mailto:contact@franchise.com">Отправить резюме</a>
+                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 

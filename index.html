@@ -13,7 +13,6 @@
 </head>
 
 <!-- баг с обновой страници и блоком хедером -->
-<!-- придумать что то с картой  -->
 <!-- проверить все своиства в ксс -->
 <!-- решить что то с футером -->
 
@@ -110,28 +109,15 @@
                     </li>
                 </ul>
                 <div class="nav">
-                    <a class="nav__brand" href="#">
+                    <a class="nav__brand" href="/storage/pdf/brand-book.pdf">
                         Brandbook
                     </a>
-                    <!-- class="nav__button modal-show modals modal-shows" data-modal="#sign-in" -->
                     <button class="modal-show nav__button" data-modal="#sign-in">
                         подать заявку
                     </button>
-                    <!-- <button class="modal-show" data-modal="#sign-in">show window</button> -->
-
-                    <!-- <div class="modal-wrap hide">
-    <div class="modal hide" id="sign-in">
-        Our modal window
-        <button class="modal-close" data-modal="#sign-in">Close</button>
-        <button class="modal-close round-close" data-modal="#sign-in">x</button>
-    </div>
-</div> -->
-                    <!-- <div class="div"> -->
                     <div class="modal">
-                        <!-- modal hide -->
-                        <!-- class="modal-wrap" -->
-                        <div class="modal-modal">
-                            <button class="modal-close ">
+                        <div class="modal__modal">
+                            <button class="modal__close ">
                                 <svg class="modal__svg" width="19px" height="19px" fill="#bbbbbb">
                                     <use xlink:href="images/icons/sprite.svg#close-3">
                                     </use>
@@ -225,7 +211,6 @@
             <div class="hero">
                 <h2 class="sr-only">приветственное видио</h2>
                 <!--!autoplay  muted loop playsinline-->
-
                 <video class="hero__video" width="1250px" height="520px" autoplay muted>
                     <source src="images/hero420.mp4" type="video/mp4">
                     <span class="sr-only">play video</span>
@@ -511,7 +496,6 @@
                         <p> трафиковая зона</p>
                     </div>
 
-
                     <div class="packages" id="packages">
                         <div class="container">
                             <ul class="packages__items">
@@ -615,92 +599,42 @@
                                     <a class="packages__link packages__link--color" href="#">Подробнее</a>
                                 </li>
                             </ul>
-                            <div>
-                                <div id="map"></div>
-                                <div class="map">
-                                    <div class="map__box">
-                                        <svg class="map__svg" width="33px" height="45px" viewBox="0 0 33 45"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-                                            <title>Открыто</title>
-                                            <desc>Created with Sketch.</desc>
-                                            <defs></defs>
-                                            <g id="Map-icons" stroke="none" stroke-width="1" fill="none"
-                                                fill-rule="evenodd">
-                                                <g id="icons" transform="translate(-185.000000, -201.000000)"
-                                                    fill="#FF8000">
-                                                    <g id="Открыто" transform="translate(172.000000, 201.000000)">
-                                                        <g id="Group-39" transform="translate(13.813559, 0.000000)">
-                                                            <path
-                                                                d="M15.6886514,45 C9.68942783,35.7357248 0.0364775239,25.1259105 0.0364775239,16.1864055 C0.0364775239,7.24690061 7.04419448,0 15.6886514,0 C24.3331084,0 31.3408254,7.24690061 31.3408254,16.1864055 C31.3408254,25.1259105 21.4161359,35.7877498 15.6886514,45 Z M15.6886514,24.2608696 C20.0108799,24.2608696 23.5147384,20.7570111 23.5147384,16.4347826 C23.5147384,12.1125541 20.0108799,8.60869565 15.6886514,8.60869565 C11.366423,8.60869565 7.86256448,12.1125541 7.86256448,16.4347826 C7.86256448,20.7570111 11.366423,24.2608696 15.6886514,24.2608696 Z"
-                                                                id="Открыто"></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span> Открыто</span>
-                                        <!-- <svg class="map__svg" width="33px" height="45px" fill="#bcbcbc">
-                                            <use xlink:href="images/icons/sprite.svg#facebook">
-                                            </use>
-                                        </svg> -->
-                                        <!-- похоже контентные потому что на них анимация -->
-                                    </div>
-                                    <div class="map__box">
-                                        <svg class="map__svg" width="32px" height="45px" viewBox="0 0 32 45"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-                                            <title>Скоро</title>
-                                            <desc>Created with Sketch.</desc>
-                                            <defs></defs>
-                                            <g id="Map-icons" stroke="none" stroke-width="1" fill="none"
-                                                fill-rule="evenodd">
-                                                <g id="icons" transform="translate(-633.000000, -201.000000)"
-                                                    fill="#F4B16E">
-                                                    <g id="Скоро" transform="translate(619.000000, 201.000000)">
-                                                        <g id="Group-39" transform="translate(14.000000, 0.000000)">
-                                                            <path
-                                                                d="M15.6521739,45 C9.65295031,35.7357248 0,25.1259105 0,16.1864055 C0,7.24690061 7.00771696,0 15.6521739,0 C24.2966309,0 31.3043478,7.24690061 31.3043478,16.1864055 C31.3043478,25.1259105 21.3796584,35.7877498 15.6521739,45 Z M15.6521739,8.80434783 C11.3478261,8.80434783 7.82608696,12.326087 7.82608696,16.6304348 C7.82608696,20.9347826 11.3478261,24.4565217 15.6521739,24.4565217 C19.9565217,24.4565217 23.4782609,20.9347826 23.4782609,16.6304348 C23.4782609,12.326087 19.9565217,8.80434783 15.6521739,8.80434783 Z M15.6521739,22.5 C12.423913,22.5 9.7826087,19.8586957 9.7826087,16.6304348 C9.7826087,13.4021739 12.423913,10.7608696 15.6521739,10.7608696 C18.8804348,10.7608696 21.5217391,13.4021739 21.5217391,16.6304348 C21.5217391,19.8586957 18.8804348,22.5 15.6521739,22.5 Z M18.8193697,13.3262003 C17.9690589,12.3985885 16.7322431,11.9347826 15.5727283,11.9347826 L15.5727283,16.5728417 L12.326087,19.8194831 C14.1040096,21.5974058 17.0414471,21.5974058 18.8966707,19.8194831 C20.6745934,18.0415605 20.6745934,15.104123 18.8193697,13.3262003 Z"
-                                                                id="Скоро"></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span>Скоро</p>
-                                    </div>
-                                    <div class="map__box">
-                                        <svg class="map__svg" width="33px" height="46px" viewBox="0 0 33 46"
-                                            version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-                                            <title>Свободно</title>
-                                            <desc>Created with Sketch.</desc>
-                                            <defs></defs>
-                                            <g id="Map-icons" stroke="none" stroke-width="1" fill="none"
-                                                fill-rule="evenodd">
-                                                <g id="icons" transform="translate(-1044.000000, -192.000000)"
-                                                    stroke="#F4B16E" fill="#FFFFFF">
-                                                    <g id="Скоро-Copy" transform="translate(1032.000000, 193.000000)">
-                                                        <g id="Group-39" transform="translate(12.813559, 0.000000)">
-                                                            <path
-                                                                d="M15.6886514,45 C9.68942783,35.7357248 0.0364775239,25.1259105 0.0364775239,16.1864055 C0.0364775239,7.24690061 7.04419448,0 15.6886514,0 C24.3331084,0 31.3408254,7.24690061 31.3408254,16.1864055 C31.3408254,25.1259105 21.4161359,35.7877498 15.6886514,45 Z M15.6886514,24.4565217 C20.0108799,24.4565217 23.5147384,20.9526633 23.5147384,16.6304348 C23.5147384,12.3082063 20.0108799,8.80434783 15.6886514,8.80434783 C11.366423,8.80434783 7.86256448,12.3082063 7.86256448,16.6304348 C7.86256448,20.9526633 11.366423,24.4565217 15.6886514,24.4565217 Z"
-                                                                id="Свободно"></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                        <span>Свободно</span>
-                                    </div>
+
+                            <div class="map">
+                                <iframe class="map__frame"
+                                    src="https://www.google.com/maps/d/embed?mid=1VHvWioisxFcROa4eD_afer-q4rc">
+                                </iframe>
+                            </div>
+                            <div class="map-icons">
+                                <div class="map-icons__box">
+                                    <svg class="map-icons__svg" width="33px" height="45px">
+                                        <use xlink:href="images/icons/sprite.svg#open">
+                                        </use>
+                                    </svg>
+                                    <span>Открыто</span>
+                                    <!-- похоже контентные потому что на них анимация -->
+                                </div>
+                                <div class="map-icons__box">
+                                    <svg class="map-icons__svg" width="32px" height="45px">
+                                        <use xlink:href="images/icons/sprite.svg#soon">
+                                        </use>
+                                    </svg>
+                                    <span>Скоро</p>
+                                </div>
+                                <div class="map-icons__box">
+                                    <svg class="map-icons__svg" width="33px" height="46px">
+                                        <use xlink:href="images/icons/sprite.svg#free">
+                                        </use>
+                                    </svg>
+                                    <span>Свободно</span>
                                 </div>
                             </div>
-                            <img class="packages__img" src="images/travel-agency.jpg" alt="туристическое агентство">
                         </div>
                     </div>
+                    <img class="packages__img" src="images/travel-agency.jpg" alt="туристическое агентство">
                 </div>
+            </div>
+            </div>
         </section>
 
         <section class="create-office">
@@ -1522,9 +1456,9 @@
                         <div class="">
                             <div class="vacancies__box ">Менеджер по туризму</div>
                             <!-- <div class="div"> -->
-                            <div class="vacancies__list dragscroll content  vacancies-demo">
-                                <!-- vacancies-demo+  content dragscroll 
-    content только и за того что там это так называется-->
+                            <div class="vacancies__list hide">
+                                <!--  dragscroll content -->
+                                <!-- vacancies-demo+  content dragscroll content только и за того что там это так называется-->
                                 <h3 class="vacancies__subtitle">Обязанности:</h3>
                                 <ul class="vacancies__items">
                                     <li>
@@ -1728,6 +1662,8 @@
     </footer>
 
 
+
+
     <!-- ------------------------------------------------------------------------------- -->
 
 
@@ -1767,7 +1703,7 @@
             });
         })(jQuery);
     </script> -->
-
+    <!-- <iframe class="map__frame" id="map" src="https://www.google.com/maps/d/embed?mid=1VHvWioisxFcROa4eD_afer-q4rc"></iframe> -->
 
     <!-- <script>
         let map;
@@ -1781,10 +1717,11 @@
                 zoom: 5,
             });
         }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async>
     </script> -->
+    <script data-cfasync="false" src="js/email-decode.min.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBD1X6JKXHNxBDkAqnlkaFSRWMe7tg1mM"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async> 
+    </script>  -->
     <!-- <script src="js/modal.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script> -->

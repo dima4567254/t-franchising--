@@ -1,3 +1,4 @@
+// инициализаци свайпер
 $(function name(params) {
     const swiper = new Swiper('.swiper', {
         // slidesPerView: 1,
@@ -13,109 +14,64 @@ $(function name(params) {
         },
     });
 
+    // закрывать ,открывать кнтент 
     // $('.vacancies__box').on('click', function () {
-    //     $('.vacancies__list').slideToggle();
+    //     $('.vacancies__list').show();
+       
     // });
 
+    $('.vacancies__box').on('click', function () {
+        $('.vacancies__list').toggle()
+    });
+
+     $(document).mouseup(function (e) {
+         const container = $(".vacancies__list");
+         if (container.has(e.target).length === 0) {
+             container.hide();
+
+             // header.removeClass();
+             // modalWindow2.classList.remove('active-modals');
+         }
+     });
+    // jQuery(document).ready(function ($) {
+    //     // $('.vacancies__list').prepend('<div id="menu-icon">Меню</div>');
+    //     $(".vacancies__box").on("click", function () {
+    //         $(".vacancies__list").slideToggle();
+    //         $(this).toggleClass("active");
+    //     });
+    // });
+
+    // $('.vacancies__list').__doWhenClickOutside(function () {
+    //     // вызывается когда произошел клик вне меню
+    //     $('.vacancies__box').slideUp();
+    //     $(this).removeClass('active');
+    // }, false);
+
+    // закрывать кнтент вне облости клика
+
+
+    //    инициализация Scrollbar
     $(".content").mCustomScrollbar({
+        theme: "dark",
         // theme: "minimal-dark",
+        // autoHideScrollbar: boolean,
         // autoHideScrollbar: "false",
-        autoHideScrollbar: "true",
+        // autoHideScrollbar: "true",
         // autoHideScrollbar: "boolean",
+        // autoDraggerLength: boolean
         //  autoHideScrollbar: " boolean true",
         // theme: "light-thick",
         // theme: "rounded-dots",
-        theme: "light-3",//+
+        // theme: "light-3", //+
         // theme: "3d-thick"
         // theme: "rounded-dark",
         // theme: "3d",
         // theme: "dark-thin",//+
     });
 
-
-    // $(function name(params) {
-    //     document.querySelectorAll('body').forEach(function (element) {
-    //         //закрываем окно на кнопке закрыть
-    //         element.onclick = closeModal;
-    //     });
-    //     document.querySelectorAll('.vacancies__list').forEach(function (element) {
-    //         //закрываем окно на клике в области серой
-    //         element.onclick = closeModal;
-    //     });
-    //     function closeModal() {
-    //         document.querySelectorAll('.vacancies__list').forEach(function (element) {
-    //             element.classList.add('hide');
-    //         });
-    //         document.onkeydown = null;
-    //     }
-    // });
-    // alert("3");
-
-
-    // alert("4");
-    // var $ = require('jquery');
-    // require('malihu-custom-scrollbar-plugin')($);
-    // Fancybox.fromNodes(
-    //     Array.from(document.querySelectorAll('[data-fancybox="gallery"]'))
-    // );
-    // new Fancybox([{
-    //     src: "<p>Lorem ipsum dolor sit amet.</p>",
-    //     type: "html",
-    // }, ]);
-
-
-    // Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {
-    //     // Your custom options
-    // });
-
-    // jQuery(document).ready(function () {
-    //     jQuery('.scrollbar-inner').scrollbar();
-    // });
-
-
-    // (function ($) {
-    //     $(window).on("load", function () {
-    //         $(".content").mCustomScrollbar();
-    //     });
-    // })
-
-    // $(".content").mCustomScrollbar({
-    //     axis: "yx", // vertical and horizontal scrollbar
-    //     theme: "dark"
-
-    // });
-
-    // $(".scroller").mCustomScrollbar({
-    //     theme: "dark-2"
-    // });
-
-    // $(".content").mCustomScrollbar({
-    //     theme: "dark"
-    // });
-
-
-    // $('.vacancies__box').on('click', function () {
-    //     $('.vacancies__list').slideToggle();
-    // });
-
-
-
-
-
-    // var $header = $(".header")
-    // var scroll = 0
-    // var active = "active"
-    // $(window).scroll(function () {
-    //     if ($(window).scrollTop() > scroll) {
-    //         $header.addClass(active)
-    //     } else {
-    //         $header.removeClass(active)
-    //     }
-    // })
-    // alert("5");
+    // скрыть блок
     $(function () {
         let header = $('.menu');
-
         $(window).scroll(function () {
             if ($(this).scrollTop() > 1) {
                 header.addClass('header-fixed');
@@ -126,9 +82,8 @@ $(function name(params) {
     });
 
 
-    // alert("6");
+    //   для работы кнопок минус плюс
     $(function () {
-
         (function quantityProducts() {
             var $quantityArrowMinus = $(".quantity-arrow-minus");
             var $quantityArrowPlus = $(".quantity-arrow-plus");
@@ -150,88 +105,7 @@ $(function name(params) {
 
     });
 
-    // alert("7");
+    //  инициализация  mixitup
     var mixer = mixitup('.slider-content');
-
-    // document.querySelectorAll('.modal-show').forEach(function (element) {
-    //     element.onclick = showModal;
-    // });
-
-    // document.querySelectorAll('.modal-close').forEach(function (element) {
-    //     //закрываем окно на кнопке закрыть
-    //     element.onclick = closeModal;
-    // });
-
-    // document.querySelectorAll('.modal-wrap').forEach(function (element) {
-    //     //закрываем окно на клике в области серой
-    //     element.onclick = closeModal;
-    // });
-
-    // function showModal() {
-    //     let modalId = this.dataset.modal;
-    //     document.querySelector(modalId).classList.remove('hide');
-    //     document.onkeydown = function (event) {
-    //         //закрываем окно на кнопку Esc
-    //         if (event.keyCode == 27) closeModal();
-    //     }
-    // }
-
-    // function closeModal() {
-    //     document.querySelectorAll('.modal-wrap').forEach(function (element) {
-    //         element.classList.add('hide');
-    //     });
-    //     document.onkeydown = null;
-    // }
-
-    /*	$(".menu a").on("click", function (event) {
-    	    event.preventDefault();
-    	    var id = $(this).attr('href'),
-    	        top = $(id).offset().top;
-    	    $('body,html').animate({
-    	        scrollTop: top
-    	    }, 1500);
-    	});
-
-        /*для закрыть меню*/
-    /*
-              $('.menu__btn').on('click', function () {
-                  $('.menu__items').toggleClass('menu__items--active');
-              });
-              $('.menu__btn').on('click', function () {
-                  $('.menu__btn').toggleClass('active');
-              });
-
-            $('.home__slider').slick({
-                dots: true,
-                arrows: false,
-                 responsive: [
-
-
-                     {
-                         breakpoint: 1150,
-                         settings: {
-                             slidesToShow: 4,
-                         }
-                     },
-                     {
-                         breakpoint: 1000,
-                         settings: {
-                             slidesToShow: 3,
-                         }
-                     },
-                     {
-                         breakpoint: 620,
-                         settings: {
-                             slidesToShow: 2,
-                             slidesToScroll: 2,
-                         }
-                     },
-                 ]
-            });
-
-
-           */
-
-
 
 });

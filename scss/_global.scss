@@ -73,3 +73,67 @@ body {
 @function min($numbers...) {
     @return m#{i}n(#{$numbers});
 }
+
+// .title {
+//     // font-size: 36px;
+//     // text-align: center;
+//     // letter-spacing: 0.04em;
+//     // text-transform: uppercase;
+//     // color: $black3;
+
+//     @media (max-width: 1200px) {
+//         font-size: 34px;
+//     }
+
+//     @media (max-width: 992px) {
+//         font-size: 32px;
+//     }
+
+//     @media (max-width: 768px) {
+//         font-size: 30px;
+//     }
+
+//     @media (max-width: 576px) {
+//         font-size: 26px;
+//     }
+
+//     &--bem {
+//         margin-bottom: 70px;
+
+//         @media (max-width: 1200px) {
+//             margin-bottom: 60px;
+//         }
+
+//         @media (max-width: 992px) {
+//             margin-bottom: 50px;
+//         }
+
+//         @media (max-width: 768px) {
+//             margin-bottom: 40px;
+//         }
+
+//         @media (max-width: 576px) {
+//             margin-bottom: 30px;
+//         }
+//     }
+// }
+
+// .section {
+//     &--bem {
+//         padding: $padding-main 0;
+
+//         @media (max-width: 992px) {
+//             padding: $padding-992 0;
+//         }
+
+//         @media (max-width: 768px) {
+//             padding: $padding-768 0;
+//         }
+
+//         @media (max-width: 576px) {
+//             padding: $padding-576 0;
+//         }
+//     }
+// }
+
+// footer__link--indent

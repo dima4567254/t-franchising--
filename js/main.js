@@ -24,15 +24,15 @@ $(function name(params) {
         $('.vacancies__list').toggle()
     });
 
-     $(document).mouseup(function (e) {
-         const container = $(".vacancies__list");
-         if (container.has(e.target).length === 0) {
-             container.hide();
+    //  $(document).mouseup(function (e) {
+    //      const container = $(".vacancies__list");
+    //      if (container.has(e.target).length === 0) {
+    //          container.hide();
 
-             // header.removeClass();
-             // modalWindow2.classList.remove('active-modals');
-         }
-     });
+    //          // header.removeClass();
+    //          // modalWindow2.classList.remove('active-modals');
+    //      }
+    //  });
     // jQuery(document).ready(function ($) {
     //     // $('.vacancies__list').prepend('<div id="menu-icon">Меню</div>');
     //     $(".vacancies__box").on("click", function () {

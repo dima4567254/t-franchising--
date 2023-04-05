@@ -6,6 +6,8 @@ $pfsquaresanspro: 'pfsquaresanspro',sans-serif;
 // $hover2: red;
 
 $active: #fb0909;
+
+$red:#db3424;
 $ac: #ff8000;
 $focus:#14B4BE;
 $title: #436372;
@@ -13,6 +15,8 @@ $title: #436372;
 $orange: #FF9900;
 $orange1: #eb6924;
 $orange2: #ff6500;
+
+$yellow:#f4c20c;
 
 $white: #FFFFFF;
 $white1:#fff2e5;
@@ -23,6 +27,10 @@ $white5:#cdd4dc;
 $white6:#f9f8f8;
 $white7:#fbfbfb;
 $white8:#efefef;
+$white9:#e8e8e8;
+$white10:#f3f3f3;
+
+
 
 
 
@@ -36,6 +44,9 @@ $silver4:#f7f7f7;
 $silver5:#737c80;
 $silver6:#cfcfcf;
 $silver7:#ededed;
+$silver8:#e1e1e1;
+$silver9:#9b9b9b;
+
 
 
 
@@ -53,10 +64,16 @@ $green2:#d2ecb9;
 $green3:#0cab46;
 $green4:#8aab64;
 
-$section:100px;/*100*/
+// $section:50px;/*100*/
 $title-margin: 30px;
 
+$padding-main:50px;
+// $padding-1200:60px;
+$padding-992:40px; //70
+$padding-768:30px; //50
+$padding-576:20px;
 
+// отступ между блоками 40px
 
 
 @mixin line-clamp-box($line-clamp, ) {

@@ -15,14 +15,10 @@
 <!-- баг с обновой страници и блоком хедером -->
 <!-- проверить все своиства в ксс -->
 <!-- решить что то с футером -->
+<!-- проверить что бы вс было списками где надо -->
 
 <!-- заполнить блок с карточками -->
-<!-- скролы к блокам -->
-<!-- сделать модальные окна -->
-
-<!-- рабобратьсяс плагином скролла -->
-<!-- разобратся с иконками -->
-<!-- рабобраться со скролами -->
+<!-- сделать что бы нижний блок убиралмя при клике не на него -->
 
 <body>
     <header class="header">
@@ -32,31 +28,27 @@
                 <div class="social">
                     <a class="social__link" href="#">
                         <svg class="social__svg" width="15px" height="15px" fill="#bcbcbc">
-                            <use xlink:href="images/icons/sprite.svg#facebook">
+                            <use xlink:href="images/sprite.svg#facebook">
                             </use>
                         </svg>
                         <span class="sr-only">facebook</span>
                     </a>
                     <a class="social__link" href="#">
                         <svg class="social__svg" width="22px" height="15px" fill="#bcbcbc">
-                            <use xlink:href="images/icons/sprite.svg#youtube">
+                            <use xlink:href="images/sprite.svg#youtube">
                             </use>
                         </svg>
                         <span class="sr-only">youtube</span>
                     </a>
                     <a class="social__link" href="#">
                         <svg class="social__svg" width="15px" height="15px">
-                            <use xlink:href="images/icons/sprite.svg#instagram">
+                            <use xlink:href="images/sprite.svg#instagram">
                             </use>
                         </svg>
                         <span class="sr-only">Instagram</span>
                     </a>
                 </div>
                 <a class="tel" href="tel:+0443039999">
-                    <!-- <svg class="tel__svg" width="15px" height="15px">
-                        <use xlink:href="images/icons/sprite.svg#call">
-                        </use>
-                    </svg> -->
                     <svg class="tel__svg" fill="red" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
                         <image data-name="Слой 1" width="15" height="15" fill="red"
@@ -77,8 +69,8 @@
                     <span class="sr-only">open menu</span>
                 </button>
                 <ul class="menu__items">
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#">
+                    <li class="menu__item menu__item--active">
+                        <a class="menu__link" href="#">
                             Преимущества
                         </a>
                     </li>
@@ -119,7 +111,7 @@
                         <div class="modal__modal">
                             <button class="modal__close ">
                                 <svg class="modal__svg" width="19px" height="19px" fill="#bbbbbb">
-                                    <use xlink:href="images/icons/sprite.svg#close-3">
+                                    <use xlink:href="images/sprite.svg#close-3">
                                     </use>
                                 </svg>
                                 <span class="sr-only">
@@ -160,7 +152,6 @@
                                     </button>
                                 </form>
                                 <div class="modal__box">
-                                    <!-- <button class="modal-close">close</button> -->
                                     <div class="modal__item modal__item--application">
                                         <h3 class="modal__subtitle">
                                             Відправити заявку
@@ -201,439 +192,454 @@
                             </div>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </div>
+            </div>
         </nav>
     </header>
-
+<!-- 
     <main class="main">
-        <section class="container">
-            <div class="hero">
-                <h2 class="sr-only">приветственное видио</h2>
-                <!--!autoplay  muted loop playsinline-->
-                <video class="hero__video" width="1250px" height="520px" autoplay muted>
-                    <source src="images/hero420.mp4" type="video/mp4">
-                    <span class="sr-only">play video</span>
-                </video>
-                <svg class="hero__svg" width="350px" height="424px">
-                    <use xlink:href="images/icons/sprite.svg#hero-text">
-                    </use>
-                </svg>
-            </div>
+        <section class="hero">
+            <h2 class="sr-only">приветственное видио</h2>
+            <!--!autoplay  muted loop playsinline--
+            <video class="hero__video" width="1250px" height="520px" autoplay muted>
+                <source src="images/hero420.mp4" type="video/mp4">
+                <span class="sr-only">play video</span>
+            </video>
+            <svg class="hero__svg" width="350px" height="424px">
+                <use xlink:href="images/sprite.svg#hero-text">
+                </use>
+            </svg>
         </section>
+
         <section class="about">
             <div class="container">
-                <div class="about__background">
-                    <h2 class="about__title title">Почему выбирают нас?</h2>
-                    <div class="about__inner">
-                        <div class="about__box">
-                            <!-- список -->
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#professor-consultation"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Сеть</span> на базе лидера ТО JoinUP!</p>
-                                </div>
+                <h2 class="about__title title">
+                    Почему выбирают нас?
+                </h2>
+                <div class="about__inner">
+                    <div class="about__box">
+                        <!-- список --
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#professor-consultation"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span>Сеть</span>
+                                    на базе лидера ТО JoinUP!
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#store"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Открытие</span> уютного и стильного офиса «под ключ»</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#store"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Открытие</span> уютного и стильного офиса «под ключ»</p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#handshake"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Партнерство</span> с популярными шоу, например – «Орел&Решка»</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#handshake"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Партнерство</span> с популярными шоу, например – «Орел&Решка»</p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#heart"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Известный</span> и популярный бренд</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#heart"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Известный</span> и популярный бренд</p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#group"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Подбор персонала</span> Мы поможем вам создать лучшую команду!</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#group"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Подбор персонала</span> Мы поможем вам создать лучшую команду!</p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="#574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#billboard"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Рекламные активности</span> по всей странеРекламные</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="#574c4c">
+                                <use xlink:href="images/sprite.svg#billboard"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span>Рекламные активности</span>
+                                    по всей странеРекламные
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40">
-                                    <use xlink:href="images/icons/sprite.svg#help"></use>
-                                </svg>
-
-                                <div class="about__text">
-                                    <p><span>Честные условия</span> поступления в сеть и всесторонняя поддержка</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40">
+                                <use xlink:href="images/sprite.svg#help"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span>Честные условия</span>
+                                    поступления в сеть и всесторонняя поддержка
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#bulb"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p>
-                                        <span> Разноплановое обучение</span> для руководителей и менеджеров – вы всегда
-                                        на шаг в переди других
-                                    </p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="574c4c">
+                                <use xlink:href="images/sprite.svg#bulb"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span> Разноплановое обучение</span>
+                                    для руководителей и менеджеров – вы всегда
+                                    на шаг в переди других
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#cocktail"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p>
-                                        <span>Бесплатные</span>
-                                        ознакомительные туры (рекламные туры)</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="574c4c">
+                                <use xlink:href="images/sprite.svg#cocktail"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span>Бесплатные</span>
+                                    ознакомительные туры (рекламные туры)
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#diploma"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Приглашение</span> лидеров на самые яркие мероприятия туроператора</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="574c4c">
+                                <use xlink:href="images/sprite.svg#diploma"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Приглашение</span>
+                                    лидеров на самые яркие мероприятия туроператора
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#support"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Кураторская поддержка</span> для каждого партнера сети</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="574c4c">
+                                <use xlink:href="images/sprite.svg#support"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p><span>Кураторская поддержка</span>
+                                    для каждого партнера сети
+                                </p>
                             </div>
-                            <div class="about__item">
-                                <svg class="about__svg" width="40px" height="40" fill="574c4c">
-                                    <use xlink:href="images/icons/sprite.svg#crm"></use>
-                                </svg>
-                                <div class="about__text">
-                                    <p><span>Подключение к системе</span> генерации запросов от туристов</p>
-                                </div>
+                        </div>
+                        <div class="about__item">
+                            <svg class="about__svg" width="40px" height="40" fill="574c4c">
+                                <use xlink:href="images/sprite.svg#crm"></use>
+                            </svg>
+                            <div class="about__text">
+                                <p>
+                                    <span>Подключение к системе</span>
+                                    генерации запросов от туристов
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <ul class="statistic">
-                        <li class="statistic__item" style="background-image: url('../images/office.jpg');">
-                            <div class="statistic__background"> </div>
-                            <div class="statistic__text">
-                                <div class="statistic__inner">
-                                    <span class="statistic__box">
-                                        Офисов
-                                    </span>
-                                    <div class="statistic__arrow">
-                                    </div>
-                                </div>
-                                <span class="statistic__number">127</span>
-                                <div class="statistic__inner">
-                                    <div class="statistic__arrow">
-                                    </div>
-                                    <p class="statistic__info">По стране</p>
-                                </div>
-                            </div>
-
-                            <div class="statistic__content">
-                                <div class="statistic__subtext">
-                                    <p>
-                                        работает 127 офисов: 6 собственных и 121
-                                        франчайзинговых
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="statistic__item" style="background-image: url('../images/tourist.jpg');">
-                            <div class="statistic__background"></div>
-                            <div class="statistic__text">
-                                <div class="statistic__inner">
-                                    <span class="statistic__box">
-                                        Туристов
-                                    </span>
-                                    <div class="statistic__arrow">
-                                    </div>
-                                </div>
-                                <span class="statistic__number">1 000 000</span>
-                                <div class="statistic__inner">
-                                    <div class="statistic__arrow">
-                                    </div>
-                                    <p class="statistic__info">за 2019 год</p>
-                                </div>
-                            </div>
-
-                            <div class="statistic__content">
-                                <div class="statistic__subtext">
-                                    <p>
-                                        В 2019 году с нами отдохнули 1 млн. туристов
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="statistic__item" style="background-image: url('../images/direction.jpg');">
-                            <div class="statistic__background"></div>
-                            <div class="statistic__text">
-                                <div class="statistic__inner">
-                                    <span class="statistic__box">
-                                        направлений
-                                    </span>
-                                    <div class="statistic__arrow">
-                                    </div>
-                                </div>
-                                <span class="statistic__number">39</span>
-                                <div class="statistic__inner">
-                                    <div class="statistic__arrow">
-                                    </div>
-                                    <p class="statistic__info">для отдыха</p>
-                                </div>
-                            </div>
-                            <div class="statistic__content">
-                                <div class="statistic__subtext">
-                                    <p>
-                                        В активе компании – 39 собственных операторских направлений, среди
-                                        которых есть
-                                        как
-                                        экзотические (например, Танзания, Шри-Ланка, Вьетнам, Ямайка), так
-                                        и стране –
-                                        особое
-                                        направление для каждого из нас.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
+                <ul class="statistic">
+                    <li class="statistic__item" style="background-image: url('../images/office.jpg');">
+                        <div class="statistic__background"> </div>
+                        <div class="statistic__text">
+                            <div class="statistic__inner">
+                                <span class="statistic__box">
+                                    Офисов
+                                </span>
+                                <div class="statistic__arrow">
+                                </div>
+                            </div>
+                            <span class="statistic__number">127</span>
+                            <div class="statistic__inner">
+                                <div class="statistic__arrow">
+                                </div>
+                                <p class="statistic__info">
+                                    По стране
+                                </p>
+                            </div>
+                        </div>
+                        <div class="statistic__content">
+                            <div class="statistic__subtext">
+                                <p>
+                                    работает 127 офисов: 6 собственных и 121
+                                    франчайзинговых
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="statistic__item" style="background-image: url('../images/tourist.jpg');">
+                        <div class="statistic__background"></div>
+                        <div class="statistic__text">
+                            <div class="statistic__inner">
+                                <span class="statistic__box">
+                                    Туристов
+                                </span>
+                                <div class="statistic__arrow">
+                                </div>
+                            </div>
+                            <span class="statistic__number">1 000 000</span>
+                            <div class="statistic__inner">
+                                <div class="statistic__arrow">
+                                </div>
+                                <p class="statistic__info">за 2019 год</p>
+                            </div>
+                        </div>
+                        <div class="statistic__content">
+                            <div class="statistic__subtext">
+                                <p>
+                                    В 2019 году с нами отдохнули 1 млн. туристов
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="statistic__item" style="background-image: url('../images/direction.jpg');">
+                        <div class="statistic__background"></div>
+                        <div class="statistic__text">
+                            <div class="statistic__inner">
+                                <span class="statistic__box">
+                                    направлений
+                                </span>
+                                <div class="statistic__arrow">
+                                </div>
+                            </div>
+                            <span class="statistic__number">39</span>
+                            <div class="statistic__inner">
+                                <div class="statistic__arrow">
+                                </div>
+                                <p class="statistic__info">для отдыха
+                                </p>
+                            </div>
+                        </div>
+                        <div class="statistic__content">
+                            <div class="statistic__subtext">
+                                <p>
+                                    В активе компании – 39 собственных операторских направлений, среди
+                                    которых есть
+                                    как
+                                    экзотические (например, Танзания, Шри-Ланка, Вьетнам, Ямайка), так
+                                    и стране –
+                                    особое
+                                    направление для каждого из нас.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="conditions">
-            <div class="container">
-                <div class="conditions__background">
-                    <h2 class="conditions__title title">
-                        условия Вступления
-                    </h2>
-                    <ul class="conditions__wrapper">
-                        <li class="conditions__item ">
-                            <div class="conditions__inner">
-                                <div class="conditions__number">
-                                    1
-                                </div>
-                                <div class="conditions__right">
-                                    <h3 class="conditions__subtitle">Найдите локацию</h3>
-                                    <div class="conditions__text">
-                                        <p>
-                                            На карте значком свободно обозначены лучшие локации для открытия точки
-                                            продаж
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="conditions__item ">
-                            <div class="conditions__inner">
-                                <div class="conditions__number">
-                                    2
-                                </div>
-                                <div class="conditions__right">
-                                    <h3 class="conditions__subtitle">Согласуйте детали с ГО</h3>
-                                    <ul class="conditions__text conditions__text--list">
-                                        <li>
-                                            Подтверждение локации
-                                        </li>
-                                        <li>
-                                            Выбор оснащения офиса
-                                        </li>
-                                        <li>
-                                            Заключение договора
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="conditions__item">
-                            <div class="conditions__inner">
-                                <div class="conditions__number conditions__number--mr">
-                                    3
-                                </div>
-                                <div class="conditions__right">
-                                    <h3 class="conditions__subtitle">Все готово!</h3>
-                                    <div class="conditions__text">
-                                        <p>
-                                            Через 4 недели отправляйте
-                                        </p>
-                                        <p>
-                                            туристов в путешествие
-                                        </p>
-                                        <p>мечты</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="conditions__info">
-                        <p>1-й этаж</p>
-                        <p>отдельный вход</p>
-                        <p> 17-18 m² минимум</p>
-                        <p> трафиковая зона</p>
-                    </div>
-
-                    <div class="packages" id="packages">
-                        <div class="container">
-                            <ul class="packages__items">
-                                <li class="packages__item">
-                                    <h3 class="packages__rate packages__rate--color-wi">
-                                        winner
-                                    </h3>
-
-                                    <div class="packages__text">
-                                        <p>
-                                            Туристические агентства, которые достигли категории Winner/Leader (согласно
-                                            рейтингу
-                                            программы лояльности Beginner to Winner ТО Join UP!)
-                                        </p>
-                                    </div>
-                                    <ul class="packages__list">
-                                        <li>
-                                            <span>●</span>
-                                            Разноплановые программы развития для менеджеров и руководителей
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Максимально возможная базовая комиссия 12%
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Кураторская поддержка 24/7
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Подключение к СРМ
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Участие в масштабных рекламных активностях и национальных акциях
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Рекламные туры для сети
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Бухгалтерские, юридические и рекрутинговые услуги
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Паушальный взнос 1 грн
-                                        </li>
-                                    </ul>
-                                    <a class="packages__link packages__link--color-link" href="#">Подробнее</a>
-                                </li>
-                                <li class="packages__item">
-                                    <h3 class="packages__rate packages__rate--color-ju">
-                                        Junior
-                                    </h3>
-                                    <div class="packages__text">
-                                        <p>
-                                            Туристические агентства категории ниже Winner/Leader, а также желающие
-                                            развиваться в
-                                            туристическом бизнесе
-                                        </p>
-                                    </div>
-                                    <ul class="packages__list">
-                                        <li>
-                                            <span>●</span>
-                                            Готовая бизнес модель
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Разноплановые программы развития для менеджеров и руководителей
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Максимально возможная базовая комиссия 12%
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Кураторская поддержка 24/7
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Подключение к СРМ
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Участие в масштабных рекламных активностях и национальных акциях
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Рекламные туры для сети
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Бухгалтерские, юридические и рекрутинговые услуги
-                                        </li>
-                                        <li>
-                                            <span>●</span>
-                                            Паушальный взнос от 40 тыс.
-                                        </li>
-                                    </ul>
-                                    <a class="packages__link packages__link--color" href="#">Подробнее</a>
-                                </li>
-                            </ul>
-
-                            <div class="map">
-                                <iframe class="map__frame"
-                                    src="https://www.google.com/maps/d/embed?mid=1VHvWioisxFcROa4eD_afer-q4rc">
-                                </iframe>
-                            </div>
-                            <div class="map-icons">
-                                <div class="map-icons__box">
-                                    <svg class="map-icons__svg" width="33px" height="45px">
-                                        <use xlink:href="images/icons/sprite.svg#open">
-                                        </use>
-                                    </svg>
-                                    <span>Открыто</span>
-                                    <!-- похоже контентные потому что на них анимация -->
-                                </div>
-                                <div class="map-icons__box">
-                                    <svg class="map-icons__svg" width="32px" height="45px">
-                                        <use xlink:href="images/icons/sprite.svg#soon">
-                                        </use>
-                                    </svg>
-                                    <span>Скоро</p>
-                                </div>
-                                <div class="map-icons__box">
-                                    <svg class="map-icons__svg" width="33px" height="46px">
-                                        <use xlink:href="images/icons/sprite.svg#free">
-                                        </use>
-                                    </svg>
-                                    <span>Свободно</span>
-                                </div>
+            <h2 class="conditions__title title">
+                условия Вступления
+            </h2>
+            <ul class="conditions__wrapper">
+                <li class="conditions__item ">
+                    <div class="conditions__inner">
+                        <div class="conditions__number">
+                            1
+                        </div>
+                        <div class="conditions__right">
+                            <h3 class="conditions__subtitle">Найдите локацию</h3>
+                            <div class="conditions__text">
+                                <p>
+                                    На карте значком свободно обозначены лучшие локации для открытия точки
+                                    продаж
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <img class="packages__img" src="images/travel-agency.jpg" alt="туристическое агентство">
+                </li>
+                <li class="conditions__item ">
+                    <div class="conditions__inner">
+                        <div class="conditions__number">
+                            2
+                        </div>
+                        <div class="conditions__right">
+                            <h3 class="conditions__subtitle">
+                                Согласуйте детали с ГО
+                            </h3>
+                            <ul class="conditions__text conditions__text--list">
+                                <li>
+                                    Подтверждение локации
+                                </li>
+                                <li>
+                                    Выбор оснащения офиса
+                                </li>
+                                <li>
+                                    Заключение договора
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="conditions__item">
+                    <div class="conditions__inner">
+                        <div class="conditions__number conditions__number--mr">
+                            3
+                        </div>
+                        <div class="conditions__right">
+                            <h3 class="conditions__subtitle">
+                                Все готово!
+                            </h3>
+                            <div class="conditions__text">
+                                <p>
+                                    Через 4 недели отправляйте
+                                </p>
+                                <p>
+                                    туристов в путешествие
+                                </p>
+                                <p>мечты</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="conditions__info">
+                <p>1-й этаж</p>
+                <p>отдельный вход</p>
+                <p> 17-18 m² минимум</p>
+                <p> трафиковая зона</p>
+            </div>
+
+            <div class="packages" id="packages">
+                <div class="container">
+                    <ul class="packages__items">
+                        <li class="packages__item">
+                            <h3 class="packages__rate packages__rate--color-wi">
+                                winner
+                            </h3>
+                            <div class="packages__text">
+                                <p>
+                                    Туристические агентства, которые достигли категории Winner/Leader (согласно
+                                    рейтингу
+                                    программы лояльности Beginner to Winner ТО Join UP!)
+                                </p>
+                            </div>
+                            <ul class="packages__list">
+                                <li>
+                                    <span>●</span>
+                                    Разноплановые программы развития для менеджеров и руководителей
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Максимально возможная базовая комиссия 12%
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Кураторская поддержка 24/7
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Подключение к СРМ
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Участие в масштабных рекламных активностях и национальных акциях
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Рекламные туры для сети
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Бухгалтерские, юридические и рекрутинговые услуги
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Паушальный взнос 1 грн
+                                </li>
+                            </ul>
+                            <a class="packages__link packages__link--color-link" href="#">Подробнее</a>
+                        </li>
+                        <li class="packages__item">
+                            <h3 class="packages__rate packages__rate--color-ju">
+                                Junior
+                            </h3>
+                            <div class="packages__text">
+                                <p>
+                                    Туристические агентства категории ниже Winner/Leader, а также желающие
+                                    развиваться в
+                                    туристическом бизнесе
+                                </p>
+                            </div>
+                            <ul class="packages__list">
+                                <li>
+                                    <span>●</span>
+                                    Готовая бизнес модель
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Разноплановые программы развития для менеджеров и руководителей
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Максимально возможная базовая комиссия 12%
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Кураторская поддержка 24/7
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Подключение к СРМ
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Участие в масштабных рекламных активностях и национальных акциях
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Рекламные туры для сети
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Бухгалтерские, юридические и рекрутинговые услуги
+                                </li>
+                                <li>
+                                    <span>●</span>
+                                    Паушальный взнос от 40 тыс.
+                                </li>
+                            </ul>
+                            <a class="packages__link packages__link--color" href="#">Подробнее</a>
+                        </li>
+                    </ul>
+
+                    <div class="map">
+                        <iframe class="map__frame"
+                            src="https://www.google.com/maps/d/embed?mid=1VHvWioisxFcROa4eD_afer-q4rc">
+                        </iframe>
+                    </div>
+
+                    <div class="map-icons">
+                        <div class="map-icons__box">
+                            <svg class="map-icons__svg" width="33px" height="45px">
+                                <use xlink:href="images/sprite.svg#open">
+                                </use>
+                            </svg>
+                            <span>Открыто</span>
+                            <!-- похоже контентные потому что на них анимация --
+                        </div>
+                        <div class="map-icons__box">
+                            <svg class="map-icons__svg" width="32px" height="45px">
+                                <use xlink:href="images/sprite.svg#soon">
+                                </use>
+                            </svg>
+                            <span>Скоро</p>
+                        </div>
+                        <div class="map-icons__box">
+                            <svg class="map-icons__svg" width="33px" height="46px">
+                                <use xlink:href="images/sprite.svg#free">
+                                </use>
+                            </svg>
+                            <span>Свободно</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <img class="packages__img" src="images/travel-agency.jpg" alt="туристическое агентство">
             </div>
         </section>
 
@@ -663,8 +669,8 @@
                                 <svg width="30px" height="32px" fill="#eb6924">
                                     <!-- подумать надо ли прописывать цвет
                                         если надо то прописать в svg файле
-                                     -->
-                                    <use xlink:href="images/icons/sprite.svg#cart">
+                                     --
+                                    <use xlink:href="images/sprite.svg#cart">
                                     </use>
                                 </svg>
                                 <span class="sr-only">Карзина</span>
@@ -672,7 +678,7 @@
                             </div>
                             <div class="create-office__box">
                                 <svg width="32px" height="32px">
-                                    <use xlink:href="images/icons/sprite.svg#gift">
+                                    <use xlink:href="images/sprite.svg#gift">
                                     </use>
                                 </svg>
                                 <span class="sr-only">Подарок</span>
@@ -716,7 +722,7 @@
                 <div class="swiper-wrapper">
                     <div class=" swiper-slide">
                         <ul class="slider-content__items slider-content ">
-                            <!-- переделать в просто итемс -->
+                            <!-- переделать в просто итемс --
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/1.png"
@@ -733,7 +739,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -743,7 +749,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -754,7 +760,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -762,7 +768,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li class="slider-content__item mix category-a">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/2.png"
@@ -779,7 +784,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -789,7 +794,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -800,7 +805,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -808,7 +813,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li class="slider-content__item mix category-a">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/3.png"
@@ -825,7 +829,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -835,7 +839,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -846,7 +850,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -854,7 +858,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li class="slider-content__item mix category-d">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/4.png"
@@ -871,7 +874,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -881,7 +884,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -892,7 +895,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -900,7 +903,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li class="slider-content__item mix category-c">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/5.png"
@@ -917,7 +919,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -927,7 +929,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -938,7 +940,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -946,7 +948,6 @@
                                     </div>
                                 </div>
                             </li>
-
                             <li class="slider-content__item mix category-c">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/6.png"
@@ -963,7 +964,7 @@
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-left">
+                                                    <use xlink:href="images/sprite.svg#arrow-left">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -973,7 +974,7 @@
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
                                                 <svg class="social__svg" width="3px" height="5px">
-                                                    <use xlink:href="images/icons/sprite.svg#arrow-right">
+                                                    <use xlink:href="images/sprite.svg#arrow-right">
                                                     </use>
                                                 </svg>
                                                 <span class="sr-only">
@@ -984,7 +985,7 @@
                                         </div>
                                         <button class="slider-content__cart" type="button">
                                             <svg class="slider-content__svg" width="20px" height="20px" fill="#ffffff">
-                                                <use xlink:href="images/icons/sprite.svg#toCart">
+                                                <use xlink:href="images/sprite.svg#toCart">
                                                 </use>
                                             </svg>
                                             <span class="sr-only">Карзина</span>
@@ -999,7 +1000,7 @@
                         <ul class="slider-content__items slider-content ">
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
-                                    <!--проверить потом надо ли-->
+                                    <!--проверить потом надо ли--
                                     <img class="slider-content__img" src="images/slider-content/1.png"
                                         alt="Торцевая наружная вывеска">
                                 </div>
@@ -1013,87 +1014,25 @@
                                         </div>
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
-                                                <svg width="3px" height="5px" viewBox="0 0 3 5" version="1.1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g id="2v" stroke="none" stroke-width="1" fill="none"
-                                                        fill-rule="evenodd">
-                                                        <g id="JoinUP!-to-travel-2"
-                                                            transform="translate(-817.000000, -5692.000000)"
-                                                            fill="#9B9B9B">
-                                                            <g id="Элементы-брендинга"
-                                                                transform="translate(-120.000000, 4943.000000)">
-                                                                <g id="Элементы"
-                                                                    transform="translate(245.000000, 431.000000)">
-                                                                    <g id="элементы">
-                                                                        <g id="ховер"
-                                                                            transform="translate(420.000000, 0.000000)">
-                                                                            <path
-                                                                                d="M273.321582,321.996754 C273.23825,321.996754 273.154929,321.965023 273.091396,321.901695 L271.092138,319.907901 C270.964959,319.781071 270.964959,319.575437 271.092138,319.448659 C271.219266,319.32188 271.425423,319.32188 271.552612,319.448659 L273.321582,321.212878 L275.090562,319.44872 C275.217741,319.321941 275.423878,319.321941 275.550995,319.44872 C275.678236,319.575499 275.678236,319.781132 275.550995,319.907962 L273.551768,321.901757 C273.488204,321.965095 273.404883,321.996754 273.321582,321.996754 Z"
-                                                                                id="Shape-Copy-2"
-                                                                                transform="translate(273.321590, 320.675164) rotate(90.000000) translate(-273.321590, -320.675164) ">
-                                                                            </path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
+                                                <svg class="social__svg" width="3px" height="5px" >
+                                                    <use xlink:href="images/sprite.svg#minus">
+                                                    </use>
                                                 </svg>
                                             </button>
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
-                                                <?xml version="1.0" encoding="UTF-8"?>
-                                                <svg width="3px" height="5px" viewBox="0 0 3 5" version="1.1"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                    <g id="2v" stroke="none" stroke-width="1" fill="none"
-                                                        fill-rule="evenodd">
-                                                        <g id="JoinUP!-to-travel-2"
-                                                            transform="translate(-845.000000, -5692.000000)"
-                                                            fill="#9B9B9B">
-                                                            <g id="Элементы-брендинга"
-                                                                transform="translate(-120.000000, 4943.000000)">
-                                                                <g id="Элементы"
-                                                                    transform="translate(245.000000, 431.000000)">
-                                                                    <g id="элементы">
-                                                                        <g id="ховер"
-                                                                            transform="translate(420.000000, 0.000000)">
-                                                                            <path
-                                                                                d="M301.321582,321.996754 C301.23825,321.996754 301.154929,321.965023 301.091396,321.901695 L299.092138,319.907901 C298.964959,319.781071 298.964959,319.575437 299.092138,319.448659 C299.219266,319.32188 299.425423,319.32188 299.552612,319.448659 L301.321582,321.212878 L303.090562,319.44872 C303.217741,319.321941 303.423878,319.321941 303.550995,319.44872 C303.678236,319.575499 303.678236,319.781132 303.550995,319.907962 L301.551768,321.901757 C301.488204,321.965095 301.404883,321.996754 301.321582,321.996754 Z"
-                                                                                id="Shape"
-                                                                                transform="translate(301.321590, 320.675164) scale(-1, 1) rotate(90.000000) translate(-301.321590, -320.675164) ">
-                                                                            </path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
+                                                <svg class="social__svg" width="3px" height="5px">
+                                                    <use xlink:href="images/sprite.svg#plus">
+                                                    </use>
                                                 </svg>
                                             </button>
                                             <span class="counter__thing">шт</span>
                                         </div>
-
                                         <button class="slider-content__cart" type="button">
-                                            <!--проверить правельность-->
-                                            <svg class="slider-content__svg" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px"
-                                                viewBox="0 0 20 20" version="1.1">
-                                                <g id="surface1">
-                                                    <path
-                                                        style=" stroke:none;fill-rule:nonzero;fill:white;fill-opacity:1;"
-                                                        d="M 11.550781 2.382812 C 11.414062 2.417969 11.269531 2.5 11.195312 2.585938 C 11.046875 2.765625 11.046875 2.75 11.046875 4.949219 C 11.046875 6.089844 11.035156 7.027344 11.019531 7.027344 C 11.007812 7.027344 10.738281 6.769531 10.425781 6.449219 C 10.109375 6.136719 9.796875 5.851562 9.730469 5.8125 C 9.523438 5.707031 9.183594 5.75 9.011719 5.910156 C 8.824219 6.074219 8.757812 6.4375 8.871094 6.667969 C 8.945312 6.8125 11.222656 9.105469 11.371094 9.179688 C 11.546875 9.269531 11.671875 9.289062 11.851562 9.246094 C 12 9.210938 12.082031 9.136719 13.230469 7.992188 C 13.902344 7.328125 14.46875 6.742188 14.492188 6.695312 C 14.609375 6.472656 14.582031 6.167969 14.421875 5.980469 C 14.234375 5.757812 13.886719 5.683594 13.632812 5.8125 C 13.570312 5.851562 13.253906 6.136719 12.941406 6.449219 C 12.628906 6.769531 12.359375 7.027344 12.347656 7.027344 C 12.328125 7.027344 12.320312 6.089844 12.320312 4.949219 C 12.320312 2.738281 12.320312 2.746094 12.164062 2.570312 C 12.035156 2.429688 11.738281 2.335938 11.550781 2.382812 Z M 11.550781 2.382812 " />
-                                                    <path
-                                                        style=" stroke:none;fill-rule:nonzero;fill:white;fill-opacity:1;"
-                                                        d="M 2.71875 2.75 C 2.566406 2.792969 2.363281 3.007812 2.320312 3.175781 C 2.238281 3.476562 2.371094 3.796875 2.636719 3.929688 C 2.789062 4 2.824219 4.003906 3.761719 4.011719 L 4.730469 4.023438 L 4.847656 4.488281 C 4.914062 4.742188 5.027344 5.164062 5.09375 5.425781 C 5.164062 5.6875 5.339844 6.347656 5.484375 6.894531 C 5.628906 7.445312 5.871094 8.339844 6.011719 8.890625 C 6.363281 10.207031 6.519531 10.789062 6.632812 11.226562 C 6.6875 11.421875 6.765625 11.730469 6.8125 11.910156 C 7 12.628906 7.050781 12.769531 7.171875 12.882812 C 7.238281 12.941406 7.335938 13.007812 7.394531 13.03125 C 7.472656 13.054688 8.519531 13.070312 11.472656 13.070312 L 15.445312 13.070312 L 15.613281 12.988281 C 15.878906 12.855469 15.871094 12.878906 16.4375 10.996094 C 16.46875 10.890625 16.5625 10.589844 16.644531 10.328125 C 16.726562 10.066406 16.917969 9.433594 17.074219 8.921875 C 17.230469 8.410156 17.441406 7.726562 17.539062 7.402344 C 17.742188 6.738281 17.75 6.59375 17.597656 6.367188 C 17.476562 6.183594 17.214844 6.066406 17.003906 6.097656 C 16.808594 6.125 16.746094 6.15625 16.609375 6.285156 C 16.480469 6.40625 16.582031 6.09375 15.171875 10.71875 C 15 11.285156 14.851562 11.753906 14.851562 11.761719 C 14.84375 11.769531 13.4375 11.769531 11.726562 11.769531 C 10.011719 11.765625 8.5 11.765625 8.367188 11.765625 L 8.121094 11.765625 L 7.996094 11.3125 C 7.871094 10.855469 7.550781 9.644531 7.191406 8.269531 C 7.078125 7.847656 6.949219 7.347656 6.894531 7.15625 C 6.84375 6.96875 6.730469 6.53125 6.636719 6.191406 C 6.550781 5.851562 6.339844 5.066406 6.175781 4.445312 C 6.011719 3.824219 5.863281 3.261719 5.847656 3.191406 C 5.804688 3.035156 5.640625 2.851562 5.472656 2.773438 C 5.351562 2.71875 5.234375 2.710938 4.085938 2.714844 C 3.390625 2.714844 2.777344 2.730469 2.71875 2.75 Z M 2.71875 2.75 " />
-                                                    <path
-                                                        style=" stroke:none;fill-rule:nonzero;fill:white;fill-opacity:1;"
-                                                        d="M 8.269531 13.675781 C 7.574219 13.804688 6.984375 14.324219 6.746094 15.015625 C 6.667969 15.238281 6.652344 15.328125 6.652344 15.636719 C 6.652344 15.945312 6.667969 16.035156 6.742188 16.257812 C 6.960938 16.898438 7.5 17.402344 8.140625 17.570312 C 8.386719 17.632812 8.839844 17.640625 9.089844 17.582031 C 9.421875 17.507812 9.800781 17.292969 10.050781 17.042969 C 10.632812 16.457031 10.800781 15.621094 10.480469 14.851562 C 10.128906 14.011719 9.191406 13.511719 8.269531 13.675781 Z M 8.957031 15.023438 C 9.070312 15.085938 9.167969 15.164062 9.230469 15.253906 C 9.320312 15.382812 9.328125 15.425781 9.328125 15.636719 C 9.328125 15.851562 9.320312 15.890625 9.230469 16.019531 C 9.089844 16.226562 8.832031 16.351562 8.589844 16.328125 C 7.988281 16.277344 7.726562 15.570312 8.152344 15.148438 C 8.382812 14.914062 8.660156 14.871094 8.957031 15.023438 Z M 8.957031 15.023438 " />
-                                                    <path
-                                                        style=" stroke:none;fill-rule:nonzero;fill:white;fill-opacity:1;"
-                                                        d="M 14.230469 13.648438 C 14.195312 13.652344 14.085938 13.675781 13.988281 13.695312 C 12.773438 13.941406 12.097656 15.328125 12.628906 16.480469 C 12.871094 17.011719 13.410156 17.445312 13.988281 17.582031 C 14.234375 17.640625 14.679688 17.632812 14.933594 17.566406 C 15.652344 17.378906 16.230469 16.78125 16.390625 16.054688 C 16.496094 15.582031 16.410156 15.050781 16.160156 14.621094 C 15.910156 14.195312 15.410156 13.824219 14.917969 13.699219 C 14.769531 13.660156 14.328125 13.628906 14.230469 13.648438 Z M 14.648438 14.96875 C 14.921875 15.046875 15.128906 15.328125 15.128906 15.628906 C 15.128906 16.308594 14.273438 16.589844 13.871094 16.046875 C 13.472656 15.503906 13.988281 14.789062 14.648438 14.96875 Z M 14.648438 14.96875 " />
-                                                </g>
+                                            <!--проверить правельность--
+                                            <svg class="social__svg" width="20px" height="20px" >
+                                                <use xlink:href="images/sprite.svg#surface">
+                                                </use>
                                             </svg>
                                         </button>
                                     </div>
@@ -1141,7 +1080,7 @@
                         <ul class="slider-content__items slider-content ">
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
-                                    <!--проверить потом надо ли-->
+                                    <!--проверить потом надо ли--
                                     <img class="slider-content__img" src="images/slider-content/1.png"
                                         alt="Торцевая наружная вывеска">
                                 </div>
@@ -1182,7 +1121,7 @@
                                                         </g>
                                                     </g>
                                                 </svg>
-                                                <!-- !!! заменить -->
+                                                <!-- !!! заменить --
                                             </button>
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
@@ -1219,7 +1158,7 @@
                                         </div>
 
                                         <button class="slider-content__cart" type="button">
-                                            <!--проверить правельность-->
+                                            <!--проверить правельность--
                                             <svg class="slider-content__svg" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px"
                                                 viewBox="0 0 20 20" version="1.1">
@@ -1282,167 +1221,159 @@
                 </div>
             </div>
             </div>
-            <!--потом перепроверить сколько картинок удалить не нужные-->
+            <!--потом перепроверить сколько картинок удалить не нужные--
         </section>
 
         <section class="reviews">
-            <div class="container">
-                <div class="reviews__background">
-                    <h2 class="reviews__title title">отзывы</h2>
-                    <!--подумать может картинки на фон-->
-                    <div class="reviews__wrapper dragscroll">
-                        <div class="reviews__inner">
-                            <!-- inner скорей всего не нужен это итем -->
-                            <img class="reviews__img" src="images/reviews/reviews-1.jpg" alt="отзыв">
-                            <div class="reviews__review ">
-                                <h3 class="reviews__subtitle">Ирина Коваль</h3>
-                                <div class="reviews__adress">
-                                    <!--у-->
-                                    Join Up! в Киеве на ул. Борщаговская, 210
-                                </div>
-                                <div class="reviews__text content">
-                                    <!-- content scroller id="content-md" -->
-                                    <p>
-                                        Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
-                                        дружба,
-                                        когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
-                                        работа,
-                                        от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
-                                        случай,
-                                        когда мечта сбылась.
-                                        Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
-                                        дружба,
-                                        когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
-                                        работа,
-                                        от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
-                                        случай,
-                                        когда мечта сбылась.
-                                        Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
-                                        дружба,
-                                        когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
-                                        работа,
-                                        от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
-                                        случай,
-                                        когда мечта сбылась.
-                                    </p>
-                                </div>
-                            </div>
+            <h2 class="reviews__title title">отзывы</h2>
+            <!--подумать может картинки на фон--
+            <div class="reviews__wrapper dragscroll">
+                <div class="reviews__inner">
+                    <!-- inner скорей всего не нужен это итем --
+                    <img class="reviews__img" src="images/reviews/reviews-1.jpg" alt="отзыв">
+                    <div class="reviews__review ">
+                        <h3 class="reviews__subtitle">Ирина Коваль</h3>
+                        <div class="reviews__adress">
+                            <!--у--
+                            Join Up! в Киеве на ул. Борщаговская, 210
                         </div>
-                        <div class="reviews__inner">
-                            <div class="reviews__review ">
-                                <h3 class="reviews__subtitle">Вячеслав Нездимовский</h3>
-                                <div class="reviews__adress">
-                                    <!--у-->
-                                    Join Up! в Киеве на ул. Игната Юры, 20
-                                </div>
-                                <div class="reviews__text content">
-                                    <p>
-                                        Для нас Join Up! – это надежный и проверенный годами партнер. Карьерный и личный
-                                        рост,
-                                        возможность приобретать новые знания, большая дружная семья и сильная команда, в
-                                        которой
-                                        приятно работать. Лучшие оперативно трудящиеся специалисты 24/7. Join Up! – это
-                                        стабильность.
-                                    </p>
-                                </div>
-                            </div>
-                            <img class="reviews__img" src="images/reviews/reviews-2.jpg" alt="отзыв">
-                        </div>
-
-                        <div class="reviews__inner">
-                            <img class="reviews__img" src="images/reviews/reviews-3.jpg" alt="отзыв">
-                            <div class="reviews__review ">
-                                <h3 class="reviews__subtitle">Ольга Кусик</h3>
-                                <div class="reviews__adress">
-                                    <!--у-->
-                                    Join Up! в Кривом Роге по просп. Металлургов, 38
-                                </div>
-                                <div class="reviews__text content">
-                                    <p>
-                                        Некоторое время назад я поверила молодым людям, которые, и это самое главное, до
-                                        последней
-                                        клетки были уверены в плоде своего труда. Я и не могла подумать, что этот бизнес
-                                        станет
-                                        делом моей жизни. Для меня Join Up! to travel – это призыв расти, развиваться,
-                                        не
-                                        стоять
-                                        на месте, побеждать и чувствовать, что я в семье, пусть не кровной, но готовой
-                                        тяжелого
-                                        мгновения прийти на помощь.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__inner">
-                            <div class="reviews__review ">
-                                <h3 class="reviews__subtitle">Юлия Сидоренко</h3>
-                                <div class="reviews__adress">
-                                    <!--у-->
-                                    Join Up! в Сумах на Покровской площади
-                                </div>
-                                <div class="reviews__text">
-                                    <p class="reviews__text content">
-                                        Поддержка всегда и во всем. Даже самая безумная идея может ожить в ваших руках.
-                                        С
-                                        Join
-                                        Up! все вопросы всегда решаются оперативно и слаженно. Партнерство и семья –
-                                        одни из
-                                        важнейших аспектов нашего выбора. Это круто и душевно – иметь друга и партнера в
-                                        одном
-                                        лице. Join Up! – самый большой стимул для роста. Вы мотивируете, заряжаете и
-                                        стимулируете. Благодаря вам мы знаем, куда идти и к чему стремиться.
-                                    </p>
-                                </div>
-                            </div>
-                            <img class="reviews__img" src="images/reviews/reviews-4.jpg" alt="отзыв">
-                        </div>
-                        <div class="reviews__inner">
-                            <img class="reviews__img" src="images/reviews/reviews-5.jpg" alt="отзыв">
-                            <div class="reviews__review scroller">
-                                <h3 class="reviews__subtitle">Катерина Стерпул</h3>
-                                <div class="reviews__adress">
-                                    <!--у-->
-                                    Join Up! в Кропивницком на ул. Чмиленко, 79
-                                </div>
-                                <div class="reviews__text content">
-                                    <p>
-                                        Для меня Join Up! to travel – это компания, которая постоянно растет и
-                                        развивается,
-                                        двигается вперед и достигает новых целей. Важным условиям успеха Join Up! to
-                                        travel
-                                        в
-                                        городе Кропивницкий есть постоянная поддержка коллег, теплая атмосфера и лучшие
-                                        предложения и выгодные цены. Убеждена, что с таким надежным партнером, как Join
-                                        Up!,
-                                        мы
-                                        займем лидерские позиции не только в Кировоградской области, но и по всей
-                                        Украине.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="reviews__text content">
+                            <!-- content scroller id="content-md" --
+                            <p>
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="reviews__inner">
+                    <div class="reviews__review ">
+                        <h3 class="reviews__subtitle">Вячеслав Нездимовский</h3>
+                        <div class="reviews__adress">
+                            <!--у--
+                            Join Up! в Киеве на ул. Игната Юры, 20
+                        </div>
+                        <div class="reviews__text content">
+                            <p>
+                                Для нас Join Up! – это надежный и проверенный годами партнер. Карьерный и личный
+                                рост,
+                                возможность приобретать новые знания, большая дружная семья и сильная команда, в
+                                которой
+                                приятно работать. Лучшие оперативно трудящиеся специалисты 24/7. Join Up! – это
+                                стабильность.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="reviews__img" src="images/reviews/reviews-2.jpg" alt="отзыв">
+                </div>
+                <div class="reviews__inner">
+                    <img class="reviews__img" src="images/reviews/reviews-3.jpg" alt="отзыв">
+                    <div class="reviews__review ">
+                        <h3 class="reviews__subtitle">Ольга Кусик</h3>
+                        <div class="reviews__adress">
+                            <!--у--
+                            Join Up! в Кривом Роге по просп. Металлургов, 38
+                        </div>
+                        <div class="reviews__text content">
+                            <p>
+                                Некоторое время назад я поверила молодым людям, которые, и это самое главное, до
+                                последней
+                                клетки были уверены в плоде своего труда. Я и не могла подумать, что этот бизнес
+                                станет
+                                делом моей жизни. Для меня Join Up! to travel – это призыв расти, развиваться,
+                                не
+                                стоять
+                                на месте, побеждать и чувствовать, что я в семье, пусть не кровной, но готовой
+                                тяжелого
+                                мгновения прийти на помощь.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__inner">
+                    <div class="reviews__review ">
+                        <h3 class="reviews__subtitle">Юлия Сидоренко</h3>
+                        <div class="reviews__adress">
+                            <!--у--
+                            Join Up! в Сумах на Покровской площади
+                        </div>
+                        <div class="reviews__text">
+                            <p class="reviews__text content">
+                                Поддержка всегда и во всем. Даже самая безумная идея может ожить в ваших руках.
+                                С
+                                Join
+                                Up! все вопросы всегда решаются оперативно и слаженно. Партнерство и семья –
+                                одни из
+                                важнейших аспектов нашего выбора. Это круто и душевно – иметь друга и партнера в
+                                одном
+                                лице. Join Up! – самый большой стимул для роста. Вы мотивируете, заряжаете и
+                                стимулируете. Благодаря вам мы знаем, куда идти и к чему стремиться.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="reviews__img" src="images/reviews/reviews-4.jpg" alt="отзыв">
+                </div>
+                <div class="reviews__inner">
+                    <img class="reviews__img" src="images/reviews/reviews-5.jpg" alt="отзыв">
+                    <div class="reviews__review scroller">
+                        <h3 class="reviews__subtitle">Катерина Стерпул</h3>
+                        <div class="reviews__adress">
+                            <!--у--
+                            Join Up! в Кропивницком на ул. Чмиленко, 79
+                        </div>
+                        <div class="reviews__text content">
+                            <p>
+                                Для меня Join Up! to travel – это компания, которая постоянно растет и
+                                развивается,
+                                двигается вперед и достигает новых целей. Важным условиям успеха Join Up! to
+                                travel
+                                в
+                                городе Кропивницкий есть постоянная поддержка коллег, теплая атмосфера и лучшие
+                                предложения и выгодные цены. Убеждена, что с таким надежным партнером, как Join
+                                Up!,
+                                мы
+                                займем лидерские позиции не только в Кировоградской области, но и по всей
+                                Украине.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
         <section class="cooperation">
-            <div class="container">
-                <div class="cooperation__background">
-                    <h2 class="cooperation__title title">
-                        сотрудничество с известными торговыми марками
-                    </h2>
-                    <div class="cooperation__images">
-                        <img class="cooperation__img" src="images/partners.png" alt="партнеры">
-                    </div>
-                </div>
+            <h2 class="cooperation__title title">
+                сотрудничество с известными торговыми марками
+            </h2>
+            <div class="cooperation__images">
+                <img class="cooperation__img" src="images/partners.png" alt="партнеры">
             </div>
         </section>
 
         <section class="vacancies">
-            <!--стилизовать-->
+            <!--стилизовать--
             <div class="container">
-                <!-- <img class="vacancies__img" src="images/vacancy-bg.jpg" alt="черно белый фон из дерева"> -->
+                <!-- <img class="vacancies__img" src="images/vacancy-bg.jpg" alt="черно белый фон из дерева"> --
                 <div class="vacancies__background">
                     <div class="vacancies__content">
                         <h2 class="vacancies__title title">
@@ -1454,12 +1385,16 @@
                             </p>
                         </div>
                         <div class="">
-                            <div class="vacancies__box ">Менеджер по туризму</div>
-                            <!-- <div class="div"> -->
+                            <div class="vacancies__box">
+                                Менеджер по туризму
+                            </div>
+                            <!-- <div class="div"> --
                             <div class="vacancies__list hide">
-                                <!--  dragscroll content -->
-                                <!-- vacancies-demo+  content dragscroll content только и за того что там это так называется-->
-                                <h3 class="vacancies__subtitle">Обязанности:</h3>
+                                <!--  dragscroll content --
+                                <!-- vacancies-demo+  content dragscroll content только и за того что там это так называется--
+                                <h3 class="vacancies__subtitle">
+                                    Обязанности:
+                                </h3>
                                 <ul class="vacancies__items">
                                     <li>
                                         Качественная консультация по продукту компании (гостиничная база страны,
@@ -1477,7 +1412,9 @@
                                         Продажа страховок
                                     </li>
                                 </ul>
-                                <h3 class="vacancies__subtitle">Требования:</h3>
+                                <h3 class="vacancies__subtitle">
+                                    Требования:
+                                </h3>
                                 <ul class="vacancies__items">
                                     <li>
                                         Профильное образование – желательно, но необязательно
@@ -1504,7 +1441,9 @@
                                         Знание английского языка – желательно
                                     </li>
                                 </ul>
-                                <h3 class="vacancies__subtitle">Личные характеристики:</h3>
+                                <h3 class="vacancies__subtitle">
+                                    Личные характеристики:
+                                </h3>
                                 <ul class="vacancies__items">
                                     <li>
                                         Клиентоориентированность
@@ -1519,7 +1458,9 @@
                                         Ответственность
                                     </li>
                                 </ul>
-                                <h3 class="vacancies__subtitle"> Компания предлагает:</h3>
+                                <h3 class="vacancies__subtitle">
+                                    Компания предлагает:
+                                </h3>
                                 <ul class="vacancies__items">
                                     <li>
                                         Официальное оформление, согласно КЗоТу Украины
@@ -1540,10 +1481,10 @@
                                         Отправить резюме
                                     </li>
                                 </ul>
-                                <!-- href="mailto:franchise@joinup.ua" -->
+                                <!-- href="mailto:franchise@joinup.ua" --
                                 <a class="vacancies__link" href="mailto:contact@franchise.com">Отправить резюме</a>
                             </div>
-                            <!-- </div> -->
+                            <!-- </div> --
                         </div>
                     </div>
                 </div>
@@ -1568,21 +1509,21 @@
                     <div class="social">
                         <a class="social__link" href="#">
                             <svg class="social__svg" width="15px" height="15px" fill="#bcbcbc">
-                                <use xlink:href="images/icons/sprite.svg#facebook">
+                                <use xlink:href="images/sprite.svg#facebook">
                                 </use>
                             </svg>
                             <span class="sr-only">facebook</span>
                         </a>
                         <a class="social__link" href="#">
                             <svg class="social__svg" width="22px" height="15px" fill="#bcbcbc">
-                                <use xlink:href="images/icons/sprite.svg#youtube">
+                                <use xlink:href="images/sprite.svg#youtube">
                                 </use>
                             </svg>
                             <span class="sr-only">youtube</span>
                         </a>
                         <a class="social__link" href="#">
                             <svg class="social__svg" width="15px" height="15px">
-                                <use xlink:href="images/icons/sprite.svg#instagram">
+                                <use xlink:href="images/sprite.svg#instagram">
                                 </use>
                             </svg>
                             <span class="sr-only">Instagram</span>
@@ -1657,74 +1598,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__copy">Copyright © Join UP! Все права защищены</div>
+            <div class="footer__copy">
+                Copyright © Join UP! Все права защищены
+            </div>
         </div>
-    </footer>
+    </footer> -->
 
-
-
-
-    <!-- ------------------------------------------------------------------------------- -->
-
-
-
-
-    <!-- <script>
-        (function ($) {
-            $(window).load(function () {
-
-                $("#content-md").mCustomScrollbar({
-                    theme: "minimal-dark"
-                });
-
-                $(".all-themes-switch a").click(function (e) {
-                    e.preventDefault();
-                    var $this = $(this),
-                        rel = $this.attr("rel"),
-                        el = $(".content");
-                    switch (rel) {
-                        case "toggle-content":
-                            el.toggleClass("expanded-content");
-                            break;
-                    }
-                });
-            });
-        })(jQuery);
-    </script> -->
-    <!-- <script>
-        (function (jQuery) {
-            jQuery(window).on("load", function () {
-
-                jQuery("#content-md").mCustomScrollbar({
-                    axis: "x",
-                    theme: "minimal-dark",
-                    autoHideScrollbar: "false",
-                });
-            });
-        })(jQuery);
-    </script> -->
-    <!-- <iframe class="map__frame" id="map" src="https://www.google.com/maps/d/embed?mid=1VHvWioisxFcROa4eD_afer-q4rc"></iframe> -->
-
-    <!-- <script>
-        let map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: {
-                    lat: 49.2378757,
-                    lng: 28.4054078
-                },
-                zoom: 5,
-            });
-        }
-    </script> -->
-    <script data-cfasync="false" src="js/email-decode.min.js"></script>
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBD1X6JKXHNxBDkAqnlkaFSRWMe7tg1mM"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async> 
-    </script>  -->
-    <!-- <script src="js/modal.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script> -->
     <script src="js/main.min.js"></script>
     <script src="js/modal.js"></script>
 

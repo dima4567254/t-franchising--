@@ -5,6 +5,14 @@
 @import 'libs';
 
 .logo {
+    z-index: 100;
+
+    @media (max-width: 576px) {
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
     &__img {
         width: 100px;
         height: 30px;
@@ -16,8 +24,13 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 100;
     background-color: $silver1;
+    padding: 0 15px;
+
+    @media (max-width: 992px) {
+        padding: 20px 15px;
+    }
 
     &__inner {
         display: flex;
@@ -25,23 +38,116 @@
         align-items: center;
         max-width: 1250px;
         margin: auto;
+
+        @media (max-width: 576px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+
+    &__logos {
+        @media (max-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        // !!!
     }
 
     &__btn {
-        display: none
+        display: none;
+
+        @media (max-width: 992px) {
+            order: 1;
+            // margin-left: 40px;
+            width: 30px;
+            height: 22px;
+            position: relative;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            padding: 0;
+            z-index: 10;
+
+            @media (max-width: 576px) {
+                order: 0;
+                margin-bottom: 20px;
+            }
+
+            span {
+                height: 3px;
+                width: 100%;
+                background-color: $black;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 100%;
+                background-color: $black;
+            }
+
+            &::before {
+                content: '';
+                top: 0;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
     }
 
     &__items {
         display: flex;
         gap: 0 30px;
+
+        @media (max-width: 992px) {
+            transform: translateY(-200%);
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            z-index: 5;
+            background-color: #edf1f4;
+            transition: transform 1s;
+            padding: 115px 0 20px;
+
+            &.menu__items--active {
+                transform: translateY(0%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding: 140px 0 20px;
+        }
+
+        @media (max-width: 576px) {
+
+            padding: 180px 0 20px;
+        }
     }
 
     &__item {
         border-bottom: 3px solid transparent;
         transition: border-bottom 0.5s;
 
+        @media (max-width: 992px) {
+            width: 100%;
+            text-align: center;
+        }
+
         &--active {
             border-bottom: 3px solid $orange1;
+
         }
 
         &:focus {
@@ -50,6 +156,8 @@
 
         &:hover {
             border-bottom: 3px solid $orange1;
+            color: $ac;
+            // background-color: red;
         }
 
         &:active {
@@ -62,13 +170,19 @@
         outline-color: $black;
         outline-offset: 5px;
         display: block;
-        color: $black2;
+        // color: $black2;
         padding: 30px 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         display: block;
         max-width: 200px;
+
+        @media (max-width: 992px) {
+            // z-index: 10;
+            // display: block;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -145,6 +259,16 @@
 .nav {
     gap: 20px;
     display: flex;
+    z-index: 100;
+
+    @media (max-width: 576px) {
+        // display: flex;
+        justify-content: center;
+        // max-width: 110px;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
     &__button,
     &__brand {
@@ -155,6 +279,7 @@
     }
 
     &__brand {
+        text-align: center;
         padding: 11px;
         font-size: 14px;
         color: $ac;
@@ -211,16 +336,33 @@
 .hero {
     position: relative;
     max-width: 1280px;
+    // width: 100%;
     margin: 0 auto;
     // плдумать про бем блок
-    // нижний отступ спорный
 
     &__video {
-        max-width: 1250px;
-        height: 55vh;
+        // max-width: 1250px;
+        // height: 55vh;
+        height: 520px;
         object-fit: cover;
-        position: relative;
+        // position: relative;
         z-index: -200;
+
+        @media (max-width: 1200px) {
+            height: 450px;
+        }
+
+        @media (max-width: 992px) {
+            height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            height: 350px;
+        }
+
+        @media (max-width: 576px) {
+            height: 300px;
+        }
     }
 
     &__svg {
@@ -233,7 +375,23 @@
         background-size: cover;
         height: 360px;
         width: 300px;
-        z-index: 100;
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            height: 400px;
+        }
+
+        @media (max-width: 992px) {
+            height: 350px;
+        }
+
+        @media (max-width: 768px) {
+            height: 300px;
+        }
+
+        @media (max-width: 576px) {
+            height: 250px;
+        }
     }
 }
 
@@ -260,17 +418,36 @@
             background-position: center;
             background-size: contain;
             z-index: -200;
+
+            @media (max-width: 576px) {
+                top: -20px;
+                background-size: 290px 85px;
+                height: 100px;
+            }
         }
     }
 
-    &__box {
-        width: 900px;
+    &__inner {
+        max-width: 900px;
         margin: auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 45px 0;
+        gap: 45px;
         margin-bottom: $padding-main;
+
+        @media (max-width: 992px) {
+            justify-content: center;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+
+        @media (max-width: 576px) {
+            gap: 20px;
+        }
     }
 
     &__text p {
@@ -288,13 +465,15 @@
 }
 
 .statistic {
+    // карточки не открываются
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 320px;
+    // height: 320px;
     flex-wrap: wrap;
+    // @media (max-width: 992px) { }
 
     &__item {
         display: flex;
@@ -309,6 +488,10 @@
         position: relative;
         cursor: pointer;
         transition: background-color 0.5s;
+
+        @media (max-width: 576px) {
+            max-width: 415px;
+        }
 
         &:focus {
             color: $focus;
@@ -445,19 +628,27 @@
         position: relative;
         z-index: 200;
         margin-bottom: 20px;
+        flex-wrap: wrap;
+        // @media (max-width: 992px) { 
+
+        // }
 
         &::before {
             content: "";
             position: absolute;
             top: 0px;
             left: -1%;
-            width: 960px;
+            max-width: 960px;
             height: 145px;
             z-index: -200;
             background-image: url('../images/conditions-bg.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 960px 151px;
+
+            @media (max-width: 992px) {
+                background-size: 768px 151px;
+            }
         }
     }
 
@@ -523,6 +714,7 @@
 
     &__info {
         display: flex;
+        flex-wrap: wrap;
         border-top: 1px solid $white2;
         border-bottom: 1px solid $white2;
         padding: 20px 20px;
@@ -712,6 +904,7 @@
     max-width: 1250px;
     margin: auto;
     background-color: $white;
+
     /*возможно разделить*/
     &__title {
         margin-bottom: $title-margin;

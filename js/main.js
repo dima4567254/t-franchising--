@@ -1,3 +1,14 @@
+ // для меню
+ $('.menu__btn').on('click', function () {
+     $('.menu__items').toggleClass('menu__items--active');
+
+     /*$('.header__logo').toggleClass('menu__list--active');
+     $('.intro__btn').toggleClass('menu__list--active');*/
+ });
+
+
+
+
 // инициализаци свайпер
 $(function name(params) {
     const swiper = new Swiper('.swiper', {

@@ -3,6 +3,14 @@
 @import 'reset';
 @import 'global';
 @import 'libs';
+// 1rem 10px 
+
+// html,
+// body {
+//     height: 100%;
+//     font-size: 100%;
+
+// }
 
 .logo {
     z-index: 100;
@@ -14,8 +22,8 @@
     }
 
     &__img {
-        width: 100px;
-        height: 30px;
+        width: 10rem;
+        height: 3rem;
         object-fit: cover;
     }
 }
@@ -26,17 +34,18 @@
     right: 0;
     z-index: 100;
     background-color: $silver1;
-    padding: 0 15px;
+    padding: 0 1.5rem;
 
     @media (max-width: 992px) {
-        padding: 20px 15px;
+        padding: 2rem 1.5rem;
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1250px;
+        // max-width: 120.5rem;
+        max-width: 68%;
         margin: auto;
 
         @media (max-width: 576px) {
@@ -50,7 +59,7 @@
         @media (max-width: 576px) {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
 
         // !!!
@@ -62,8 +71,8 @@
         @media (max-width: 992px) {
             order: 1;
             // margin-left: 40px;
-            width: 30px;
-            height: 22px;
+            width: 3rem;
+            height: 2.2rem;
             position: relative;
             border: none;
             display: flex;
@@ -75,7 +84,7 @@
 
             @media (max-width: 576px) {
                 order: 0;
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
             }
 
             span {
@@ -106,12 +115,12 @@
 
     &__items {
         display: flex;
-        gap: 0 30px;
+        gap: 0 3rem;
 
         @media (max-width: 992px) {
             transform: translateY(-200%);
             position: absolute;
-            top: 0px;
+            top: 0;
             width: 100%;
             left: 0;
             flex-direction: column;
@@ -119,7 +128,7 @@
             z-index: 5;
             background-color: #edf1f4;
             transition: transform 1s;
-            padding: 115px 0 20px;
+            padding: 11.5rem 0 2rem;
 
             &.menu__items--active {
                 transform: translateY(0%);
@@ -127,12 +136,12 @@
         }
 
         @media (max-width: 768px) {
-            padding: 140px 0 20px;
+            padding: 14rem 0 2rem;
         }
 
         @media (max-width: 576px) {
 
-            padding: 180px 0 20px;
+            padding: 18rem 0 2rem;
         }
     }
 
@@ -166,17 +175,17 @@
     }
 
     &__link {
-        font-size: 14px;
+        font-size: $fz-small;
         outline-color: $black;
-        outline-offset: 5px;
+        outline-offset: .5rem;
         display: block;
         // color: $black2;
-        padding: 30px 0;
+        padding: 3rem 0;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         display: block;
-        max-width: 200px;
+        max-width: 20rem;
 
         @media (max-width: 992px) {
             // z-index: 10;
@@ -195,13 +204,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 0;
+        padding: .5rem 0;
         margin: 0 auto;
-        max-width: 1250px;
+        // max-width: 120.5rem;
+        max-width: 67%;
+        // max-width: 75rem;
     }
 
     &__button {
-        padding: 30px 0;
+        padding: 3rem 0;
     }
 }
 
@@ -211,7 +222,7 @@
 
 .social {
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
 
     &__link {
         display: inline-flex;
@@ -228,7 +239,7 @@
     display: flex;
     align-items: center;
     transition: color 0.5s;
-    font-size: 12px;
+    font-size: $fz-small-2;
     color: $black1;
 
     &:focus {
@@ -252,12 +263,12 @@
     }
 
     &__svg {
-        margin-right: 10px;
+        margin-right: 1rem;
     }
 }
 
 .nav {
-    gap: 20px;
+    gap: 2rem;
     display: flex;
     z-index: 100;
 
@@ -267,7 +278,7 @@
         // max-width: 110px;
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__button,
@@ -280,8 +291,8 @@
 
     &__brand {
         text-align: center;
-        padding: 11px;
-        font-size: 14px;
+        padding: 1.1rem;
+        font-size: $fz-small;
         color: $ac;
         background-color: $white1;
         border: 1px solid $ac;
@@ -302,9 +313,9 @@
     }
 
     &__button {
-        padding: 9px;
-        border-radius: 3px;
-        font-size: 14px;
+        padding: .9rem;
+        border-radius: .3rem;
+        font-size: $fz-small;
         border: none;
         color: $white;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, $orange), to($orange1));
@@ -335,7 +346,8 @@
 
 .hero {
     position: relative;
-    max-width: 1280px;
+    // max-width: 128rem;
+    max-width: 67%;
     // width: 100%;
     margin: 0 auto;
     // плдумать про бем блок
@@ -343,25 +355,25 @@
     &__video {
         // max-width: 1250px;
         // height: 55vh;
-        height: 520px;
+        height: 52rem;
         object-fit: cover;
         // position: relative;
         z-index: -200;
 
         @media (max-width: 1200px) {
-            height: 450px;
+            height: 45rem;
         }
 
         @media (max-width: 992px) {
-            height: 400px;
+            height: 40rem;
         }
 
         @media (max-width: 768px) {
-            height: 350px;
+            height: 35rem;
         }
 
         @media (max-width: 576px) {
-            height: 300px;
+            height: 30rem;
         }
     }
 
@@ -373,30 +385,30 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 360px;
-        width: 300px;
+        height: 36rem;
+        width: 30rem;
         z-index: 1;
 
         @media (max-width: 992px) {
-            height: 400px;
+            height: 40rem;
         }
 
         @media (max-width: 992px) {
-            height: 350px;
+            height: 35rem;
         }
 
         @media (max-width: 768px) {
-            height: 300px;
+            height: 30rem;
         }
 
         @media (max-width: 576px) {
-            height: 250px;
+            height: 25rem;
         }
     }
 }
 
 .about {
-    max-width: 1280px;
+    max-width: 128rem;
     margin: 0 auto;
     background-color: $white;
     padding-top: $padding-main;
@@ -408,11 +420,11 @@
         &::before {
             content: "";
             position: absolute;
-            top: -10px;
+            top: -1rem;
             left: 50%;
             transform: translateX(-50%);
-            height: 50px;
-            width: 400px;
+            height: 5rem;
+            width: 40rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
@@ -420,38 +432,39 @@
             z-index: -200;
 
             @media (max-width: 576px) {
-                top: -20px;
-                background-size: 290px 85px;
-                height: 100px;
+                top: -2rem;
+                background-size: 29rem 8.5rem;
+                height: 10rem;
             }
         }
     }
 
     &__inner {
-        max-width: 900px;
+        max-width: 90rem;
         margin: auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 45px;
+        gap: 4.5rem;
         margin-bottom: $padding-main;
 
         @media (max-width: 992px) {
             justify-content: center;
-            gap: 40px;
+            gap: 4rem;
         }
 
         @media (max-width: 768px) {
-            gap: 30px;
+            gap: 3rem;
         }
 
         @media (max-width: 576px) {
-            gap: 20px;
+            gap: 2rem;
         }
     }
 
     &__text p {
-        width: 265px;
+        font-size: $fz;
+        width: 26.5rem;
         position: relative;
     }
 
@@ -460,7 +473,7 @@
     }
 
     &__svg {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -479,8 +492,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 415px;
-        min-height: 320px;
+        width: 41.5rem;
+        min-height: 32rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -490,7 +503,7 @@
         transition: background-color 0.5s;
 
         @media (max-width: 576px) {
-            max-width: 415px;
+            max-width: 41.5rem;
         }
 
         &:focus {
@@ -529,7 +542,7 @@
     }
 
     &__subtext {
-        font-size: 16px;
+        font-size: $fz;
         line-height: 1.6;
         text-align: center;
         position: relative;
@@ -555,11 +568,11 @@
         white-space: nowrap;
         opacity: 1;
         visibility: visible;
-        width: 240px;
+        width: 24rem;
     }
 
     &__box {
-        padding-right: 40px;
+        padding-right: 4rem;
     }
 
     &__arrow {
@@ -575,14 +588,14 @@
 
     &__number {
         font-weight: 700;
-        font-size: 48px;
+        font-size: $fz-big;
         text-align: center;
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
     }
 
     &__info {
-        padding-left: 40px;
+        padding-left: 4rem;
         white-space: nowrap;
     }
 }
@@ -592,7 +605,7 @@
     position: relative;
     background-color: $white;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 128rem;
 
     &__title {
         margin-bottom: $title-margin;
@@ -601,59 +614,65 @@
         position: relative;
         z-index: 200;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 4rem;
         // @include line-clamp-one(800px);
 
         &::before {
             content: "";
             position: absolute;
-            top: -40px;
+            top: -4rem;
             left: 50%;
             transform: translateX(-50%);
-            height: 100px;
-            width: 780px;
+            height: 10rem;
+            width: 78rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             z-index: -200;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
     }
 
     &__wrapper {
         display: flex;
         justify-content: center;
-        width: 960px;
+        width: 96rem;
         margin: auto;
         position: relative;
         z-index: 200;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         flex-wrap: wrap;
-        // @media (max-width: 992px) { 
 
-        // }
+        @media (max-width: 576px) {
+            display: block;
+            width: 100%;
+        }
 
         &::before {
             content: "";
             position: absolute;
             top: 0px;
             left: -1%;
-            max-width: 960px;
-            height: 145px;
+            max-width: 96rem;
+            height: 14.5rem;
             z-index: -200;
             background-image: url('../images/conditions-bg.png');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 960px 151px;
+            background-size: 96rem 15.1rem;
 
             @media (max-width: 992px) {
-                background-size: 768px 151px;
+                background-size: 76.8rem 15.1rem;
             }
         }
     }
 
     &__item {
-        width: 320px;
+        width: 32rem;
     }
 
     &__inner {
@@ -663,12 +682,12 @@
     &__number {
         transition: color 0.5s;
         font-weight: 500;
-        font-size: 120px;
+        font-size: $fz-number;
         color: $green2;
-        margin-right: 10px;
+        margin-right: 1rem;
 
         &--mr {
-            margin-left: 10px;
+            margin-left: 1rem;
         }
 
         &:focus {
@@ -685,28 +704,29 @@
     }
 
     &__right {
-        width: 215px;
+        width: 21.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     &__subtitle {
-        font-size: 18px;
-        margin-bottom: 5px;
+        font-size: $fz-subtitle;
+        margin-bottom: .5rem;
         color: $black;
         font-weight: 500;
     }
 
     &__text {
-        font-size: 14px;
+        font-size: $fz-small;
         color: $black1;
-        line-height: 22px;
+        // line-height: 22px;
+        line-height: 1.5;
         @include line-clamp-box(6);
 
         &--list {
             list-style: disc;
-            padding-left: 20px;
+            padding-left: 2rem;
             @include line-clamp-box(1);
 
         }
@@ -717,11 +737,17 @@
         flex-wrap: wrap;
         border-top: 1px solid $white2;
         border-bottom: 1px solid $white2;
-        padding: 20px 20px;
+        padding: 2rem 2rem;
         justify-content: space-between;
-        width: 960px;
+        width: 96rem;
         margin: auto;
+        font-size: $fz;
+
         /*пришлось писать 2 раза можно через html*/
+        @media (max-width: 576px) {
+            display: block;
+            width: 100%;
+        }
     }
 
     &__info p {
@@ -731,38 +757,42 @@
             content: "\2714";
             position: absolute;
             top: 0;
-            left: -22px;
-            height: 10px;
-            width: 10px;
+            left: -2.2rem;
+            height: 1rem;
+            width: 1rem;
         }
     }
 }
 
 .packages {
-    padding-top: 40px;
+    padding-top: 4rem;
     // отступ между блоками
 
     &__items {
         display: flex;
         justify-content: space-around;
         padding-bottom: $padding-main;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
     }
 
     &__item {
-        border-radius: 30px;
+        border-radius: 3rem;
         background-color: $white;
-        border: 15px solid $white3;
+        border: 1.5rem solid $white3;
         display: flex;
         flex-direction: column;
-        max-width: 555px;
+        max-width: 55.5rem;
     }
 
     &__rate {
-        margin-top: 10px;
+        margin-top: 1rem;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom: 20px;
-        font-size: 42px;
+        margin-bottom: 2rem;
+        font-size: $fz-rate;
 
         &--color-wi {
             color: $orange2;
@@ -774,18 +804,20 @@
     }
 
     &__text {
-        padding: 0 10px;
-        margin-bottom: 20px;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
         text-align: center;
         color: $silver;
         line-height: 1.55;
         font-weight: 500;
+        font-size: $fz;
+        // небыло
         @include line-clamp-box(3);
     }
 
     &__list {
-        margin-bottom: 5px;
-        padding: 0 100px;
+        margin-bottom: .5rem;
+        padding: 0 10rem;
         margin-bottom: auto;
     }
 
@@ -795,27 +827,27 @@
 
     &__list li {
         color: $black;
-        font-size: 16px;
+        font-size: $fz;
         line-height: 1.55;
         @include line-clamp-box(2);
 
         &:not(:last-child) {
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
         }
     }
 
     &__link {
-        margin: 20px auto;
-        padding: 20px 57px;
+        margin: 2rem auto;
+        padding: 2rem 5.7rem;
         color: $white;
-        margin-top: 60px;
-        max-width: 480px;
+        margin-top: 6rem;
+        max-width: 48rem;
         text-align: center;
-        font-size: 14px;
+        font-size: $fz-small;
         // line-height: 55px;
         font-weight: 500;
-        letter-spacing: 2px;
-        border-radius: 30px;
+        letter-spacing: .2rem;
+        border-radius: 3rem;
         @include line-clamp-box(1);
         transition: background-color 0.5s color 0.5s;
 
@@ -851,8 +883,8 @@
     }
 
     &__img {
-        width: 1250px;
-        height: 520px;
+        width: 12.5rem;
+        height: 52rem;
         object-fit: cover;
     }
 }
@@ -862,16 +894,16 @@
 .map {
     position: relative;
     margin: auto;
-    width: 960px;
-    height: 490px;
+    width: 100%;
+    height: 49rem;
     overflow: hidden;
 
     &__frame {
         position: absolute;
-        top: -55px;
+        top: -5.5rem;
         left: 0;
         width: 100%;
-        height: 566px;
+        height: 56.6rem;
     }
 }
 
@@ -886,22 +918,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: $fz-small;
         @include line-clamp-inline(1);
 
         &:not(:last-child) {
-            margin-right: 65px;
+            margin-right: 6.5rem;
         }
     }
 
     &__svg {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 }
 
 .create-office {
     padding-top: $padding-main;
-    max-width: 1250px;
+    max-width: 125rem;
     margin: auto;
     background-color: $white;
 
@@ -913,30 +945,39 @@
         &::before {
             content: "";
             position: absolute;
-            top: -30px;
+            top: -3rem;
             left: 50%;
             transform: translateX(-50%);
-            height: 100px;
-            width: 445px;
+            height: 10rem;
+            width: 44.5rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             z-index: -1;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
-        max-width: 960px;
-        margin: auto auto 30px auto;
+        max-width: 96rem;
+        margin: auto auto 3rem auto;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
     }
 
     &__text {
-        max-width: 610px;
+        max-width: 61rem;
         font-weight: 400;
-
+        font-size: $fz;
+        // небыло
     }
 
     &__text p {
@@ -954,22 +995,22 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 12px 22px 12px 22px;
+        padding: 1.2rem 2.2rem 1.2rem 2.2rem;
         border: 1px solid $white10;
-        max-width: 100px;
+        max-width: 10rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
         &:not(:last-child) {
-            margin-right: 10px;
+            margin-right: 1rem;
         }
     }
 
     &__number {
         display: block;
-        font-size: 24px;
-        margin-top: 18px;
+        font-size: $fz-number2;
+        margin-top: 1.8rem;
         line-height: 1;
 
         &--shopping {
@@ -984,18 +1025,18 @@
     &__gifts {}
 
     &__prise {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 
     &__sum {
         display: flex;
         justify-content: flex-end;
         font-weight: 500;
-        font-size: 24px;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        font-size: $fz-number2;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         color: $black2;
-        max-width: 140px;
+        max-width: 14rem;
         // @include line-clamp-box(1);
         // -webkit-line-clamp: 1;
         // -webkit-box-orient: vertical;
@@ -1007,12 +1048,12 @@
 
     &__button {
         display: block;
-        padding: 10px 31px;
+        padding: 1rem 3.1rem;
         border: none;
         cursor: default;
         background-color: $white4;
         color: $white5;
-        font-size: 16px;
+        font-size: $fz;
     }
 }
 
@@ -1022,23 +1063,23 @@
         justify-content: center;
         border-top: 1px solid $silver1;
         border-bottom: 1px solid $silver1;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
         outline-color: $black;
-        outline-offset: 5px;
+        outline-offset: .5rem;
     }
 
     &__item {
         display: flex;
         justify-content: center;
-        height: 50px;
-        font-size: 14px;
+        height: 5rem;
+        font-size: $fz-small;
         color: $black2;
         cursor: pointer;
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.5s;
 
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-right: 3rem;
         }
     }
 
@@ -1061,17 +1102,17 @@
         // justify-content: ;
         // justify-content: space-between; возможно убрать ломается сетка с 2 товарами
         flex-wrap: wrap;
-        gap: 35px 30px;
-        width: 960px;
+        gap: 3.5rem 3rem;
+        width: 96rem;
         padding-bottom: $padding-main;
         margin: auto;
-        height: 630px;
+        height: 63rem;
     }
 
     &__item {
-        width: 295px;
+        width: 29.5rem;
         /*!*/
-        height: 295px;
+        height: 29.5rem;
         background-color: $white;
         border: 1px solid $silver2;
         cursor: pointer;
@@ -1080,10 +1121,10 @@
         flex-direction: column;
 
         &:hover {
-            box-shadow: 0 20px 26px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2rem 2.6rem 0 rgba(0, 0, 0, 0.2);
 
             .slider-content__item {
-                box-shadow: -20px 30px 26px 0 $black;
+                box-shadow: -2rem 3rem 2.6rem 0 $black;
             }
 
             .slider-content__images {
@@ -1156,8 +1197,8 @@
     }
 
     &__img {
-        width: 195px;
-        height: 195px;
+        width: 19.5rem;
+        height: 19.5rem;
         object-fit: contain;
         object-position: center;
     }
@@ -1165,10 +1206,10 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 0 2rem;
         visibility: hidden;
         opacity: 0;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__name {
@@ -1178,13 +1219,13 @@
     &__box {
         font-weight: 500;
         color: $orange1;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
         text-align: end;
     }
 
     &__cart {
         position: absolute;
-        bottom: -30px;
+        bottom: -3rem;
         left: 50%;
         transform: translateX(-50%);
         background-image: linear-gradient(-180deg, $orange 3%, $orange2 100%);
@@ -1193,7 +1234,7 @@
         align-items: center;
         justify-content: center;
         border: none;
-        padding: 20px;
+        padding: 2rem;
         // transition: all 10s;
         transition: 10s;
     }
@@ -1205,17 +1246,17 @@
 }
 
 .swiper-button-next::after {
-    margin-right: 100px;
+    margin-right: 10rem;
     /*%*/
 }
 
 .swiper-button-prev::after {
-    margin-left: 100px;
+    margin-left: 10rem;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 26px;
+    font-size: $fz-sviper;
     font-weight: 700;
     color: $orange1;
 }
@@ -1231,14 +1272,14 @@
 .swiper-button-prev,
 .swiper-button-next {
     z-index: 999;
-    width: 24px;
+    width: 2.4rem;
     top: 36%;
-    height: 24px;
+    height: 2.4rem;
     transition: fill;
     display: flex;
     cursor: pointer;
-    width: 160px;
-    height: 160px;
+    width: 16rem;
+    height: 16rem;
     background-color: $white;
     border-radius: 100%;
     border: 1px solid $silver7;
@@ -1259,7 +1300,7 @@
 .reviews {
     background-color: $white;
     padding: $padding-main 0;
-    max-width: 1280px;
+    max-width: 128rem;
     margin: 0 auto;
 
     &__title {
@@ -1269,11 +1310,11 @@
         &::before {
             content: "";
             position: absolute;
-            top: -10px;
+            top: -1rem;
             left: 50%;
             transform: translateX(-50%);
-            height: 50px;
-            width: 400px;
+            height: 5rem;
+            width: 40rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
@@ -1292,43 +1333,43 @@
     &__inner {}
 
     &__img {
-        width: 300px;
-        height: 300px;
+        width: 30rem;
+        height: 30rem;
         object-fit: cover;
     }
 
     &__review {
-        width: 300px;
-        height: 300px;
+        width: 30rem;
+        height: 30rem;
         background-color: $white;
         border: 1px solid $silver1;
-        padding: 10px;
+        padding: 1rem;
         overflow: hidden;
         // !!!потом возможно убрать высоту
     }
 
     &__subtitle {
-        margin-bottom: 10px;
-        font-size: 16px;
+        margin-bottom: 1rem;
+        font-size: $fz;
         text-align: center;
         font-weight: 700;
     }
 
     &__adress {
-        font-size: 14px;
+        font-size: $fz-small;
         color: $silver3;
         line-height: 1.1;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         text-align: center;
     }
 
     &__text {
         font-style: italic;
-        font-size: 14px;
+        font-size: $fz-small;
         line-height: 1.5;
-        padding-left: 10px;
-        max-width: 300px;
-        max-height: 190px;
+        padding-left: 1rem;
+        max-width: 30rem;
+        max-height: 19rem;
         overflow: hidden;
     }
 
@@ -1339,46 +1380,54 @@
 }
 
 .mCSB_inside>.mCSB_container {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .cooperation {
     padding-top: $padding-main;
     background-color: $white;
-    max-width: 1280px;
+    max-width: 128rem;
     margin: 0 auto;
 
     &__title {
         margin-bottom: $title-margin;
         position: relative;
         font-weight: 700;
-        margin-top: 40px;
+        margin-top: 4rem;
 
         &::before {
             content: "";
             position: absolute;
-            top: -35px;
+            top: -3.5rem;
             left: 50%;
             transform: translateX(-50%);
-            height: 100px;
-            width: 900px;
+            height: 10rem;
+            width: 90rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             z-index: -200;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
     }
 
     &__images {
-        max-width: 960px;
+        max-width: 96rem;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 5rem;
     }
 
     &__img {
-        max-width: 960px;
-        height: 333px;
+        max-width: 96rem;
+        height: 33.3rem;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
     &__background {
@@ -1403,25 +1452,34 @@
             position: absolute;
             top: 0;
             right: 0;
-            height: 520px;
-            width: 355px;
+            height: 52rem;
+            width: 35.5rem;
             background-image: url('../images/vacancies/vacancy-hands.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
 
         &::after {
             content: "";
             position: absolute;
-            bottom: -59px;
-            left: 32px;
-            height: 250px;
-            width: 220px;
+            bottom: -5.9rem;
+            left: 3.2rem;
+            height: 25rem;
+            width: 22rem;
             background-image: url('../images/vacancies/vacancy-tel.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            // @media (max-width: 576px) {
+            //     width: 100%;
+            // }
+
         }
     }
 
@@ -1432,9 +1490,9 @@
             content: "";
             position: absolute;
             top: 0;
-            left: 100px;
-            height: 300px;
-            width: 230px;
+            left: 10rem;
+            height: 30rem;
+            width: 23rem;
             background-image: url('../images/vacancies/vacancy-purse.png');
             background-repeat: no-repeat;
             background-position: center;
@@ -1446,8 +1504,8 @@
         margin-bottom: $title-margin;
         position: relative;
         font-weight: 700;
-        font-size: 28px;
-        padding-top: 90px;
+        font-size: $fz-title;
+        padding-top: 9rem;
         z-index: 200;
 
         &::before {
@@ -1456,36 +1514,41 @@
             top: 55px;
             left: 50%;
             transform: translateX(-50%);
-            width: 560px;
-            height: 100px;
+            width: 56rem;
+            height: 10rem;
             background-image: url('../images/yellow-stripe.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             z-index: -200;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
         }
     }
 
     &__text {
         color: $black1;
-        font-size: 20px;
+        font-size: $fz-text;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
     }
 
     &__box {
         text-align: center;
-        padding: 25px 85px;
+        padding: 2.5rem 8.5rem;
         font-weight: 700;
         background-color: $white;
         cursor: pointer;
         display: block;
         color: $black3;
-        max-width: 420px;
+        max-width: 42rem;
         margin: 0 auto;
         white-space: nowrap;
         transition: background-color 0.5s,
             color 0.5s;
+        font-size: $fz;
 
         &:focus {
             color: $focus;
@@ -1501,11 +1564,13 @@
         }
     }
 
+    &__map {}
+
     &__list {
+        // padding: 35px;
+        max-width: 42rem;
         margin: 0 auto;
-        max-width: 420px;
         background-color: $white;
-        padding: 35px;
         position: relative;
         height: 55vh;
         overflow: overlay;
@@ -1513,26 +1578,26 @@
 
     &__subtitle {
         font-weight: 700;
-        font-size: 16px;
-        margin-bottom: 15px;
+        font-size: $fz;
+        margin-bottom: 1.5rem;
     }
 
     &__items {
         list-style-type: disc;
-        margin-bottom: 25px;
+        margin-bottom: 2.5rem;
     }
 
     &__items li {
-        padding-left: 20px;
+        padding-left: 2rem;
         position: relative;
     }
 
 
     &__link {
         border-radius: 3px;
-        padding: 10px 18px;
+        padding: 1rem 1.8rem;
         display: inline-block;
-        font-size: 16px;
+        font-size: $fz;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%, $orange), to($orange2));
         background-image: linear-gradient(-180deg, $orange 3%, $orange2 100%);
         border-radius: 3px;
@@ -1563,15 +1628,19 @@
         display: flex;
         padding-bottom: $padding-main;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
     }
 
     &__adress {
-        margin-bottom: 15px;
-        font-size: 14px;
+        margin-bottom: 1.5rem;
+        font-size: $fz-small;
     }
 
     &__logo {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
     }
 
     &__text {
@@ -1584,7 +1653,7 @@
     }
 
     &__tel {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__items {
@@ -1595,23 +1664,23 @@
     &__title {
         /*!!!проверить*/
         color: $black1;
-        font-size: 14px;
-        letter-spacing: -0.51px;
-        margin-bottom: 15px;
+        font-size: $fz-small;
+        // letter-spacing: -0.51em;
+        margin-bottom: 1.5rem;
         font-weight: 700;
     }
 
     &__link {
-        padding-left: 20px;
+        padding-left: 2rem;
         list-style: disc;
     }
 
     &__link li {
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     &__link a {
-        font-size: 14px;
+        font-size: $fz-small;
         transition: color 0.5s;
 
         &:focus {
@@ -1629,7 +1698,8 @@
 
     &__copy {
         text-align: center;
-        padding-bottom: 40px;
+        padding-bottom: 4rem;
+        font-size: $fz;
     }
 }
 
@@ -1665,12 +1735,12 @@
 }
 
 .quantity-num {
-    width: 25px;
-    height: 22px;
+    width: 2.5rem;
+    height: 2.2rem;
     text-align: center;
     border: 1px solid $silver;
     color: $silver5;
-    font-size: 16px;
+    font-size: $fz;
     border-bottom: 1px solid $white8;
     border-top: 1px solid $white8;
 }
@@ -1700,20 +1770,20 @@
     }
 
     &__num {
-        width: 25px;
-        height: 22px;
+        width: 2.5rem;
+        height: 2.2rem;
         text-align: center;
         border: 1px solid $silver;
         color: $silver5;
-        font-size: 16px;
+        font-size: $fz;
         border-bottom: 1px solid $white8;
         border-top: 1px solid $white8;
     }
 
     &__thing {
         color: $silver5;
-        font-size: 16px;
-        margin-left: 10px;
+        font-size: $fz;
+        margin-left: 1rem;
     }
 }
 
@@ -1751,8 +1821,8 @@ input[type="number"]::-webkit-inner-spin-button {
         background-color: transparent;
         border: none;
         position: absolute;
-        top: -30px;
-        right: -30px;
+        top: -3rem;
+        right: -3rem;
         transition: color 0.5s;
 
         &:focus {
@@ -1770,7 +1840,6 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -1779,14 +1848,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
     &__form {
         width: 50%;
-        max-width: 370px;
+        max-width: 37rem;
         background: $white;
-        padding: 30px;
+        padding: 3rem;
     }
 
     &__title {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: $fz-title;
+        margin-bottom: 3rem;
         text-align: center;
 
         span {
@@ -1795,14 +1864,14 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     &__inputs {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__input {
         display: block;
         width: 100%;
-        font-size: 14px;
-        padding: 15px;
+        font-size: $fz-small;
+        padding: 1.5rem;
         border: 1px solid $silver8;
         outline: transparent;
 
@@ -1812,19 +1881,19 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     &__info {
-        font-size: 12px;
-        margin-bottom: 30px;
+        font-size: $fz-small-2;
+        margin-bottom: 3rem;
         color: $silver9;
     }
 
     &__btn {
         display: block;
         border-radius: 3px;
-        font-size: 16px;
+        font-size: $fz;
         color: $ac;
         background: $white1;
         border: 1px solid $ac;
-        padding: 15px;
+        padding: 1.5rem;
         width: 100%;
         text-align: center;
         transition: color 0.5s;
@@ -1845,23 +1914,23 @@ input[type="number"]::-webkit-inner-spin-button {
 
     &__box {
         width: 50%;
-        max-width: 370px;
+        max-width: 37rem;
         color: $white;
     }
 
     &__subtitle {
-        font-size: 18px;
+        font-size: $fz-subtitle;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
 
     &__text {
-        line-height: 22px;
+        line-height: 1.2;
     }
 
     &__items {
         list-style: outside;
-        padding-left: 20px;
+        padding-left: 2rem;
     }
 
     &__item {
@@ -1871,10 +1940,10 @@ input[type="number"]::-webkit-inner-spin-button {
         &::before {
             content: "";
             position: absolute;
-            left: 20px;
+            left: 2rem;
             top: 0;
-            border-left: 37px solid transparent;
-            border-right: 37px solid transparent;
+            border-left: 3.7rem solid transparent;
+            border-right: 3.7rem solid transparent;
         }
 
         &--application {
@@ -1885,7 +1954,7 @@ input[type="number"]::-webkit-inner-spin-button {
             background-color: $orange1;
 
             &::before {
-                border-top: 11px solid $yellow;
+                border-top: 1.1rem solid $yellow;
             }
         }
 
@@ -1893,19 +1962,45 @@ input[type="number"]::-webkit-inner-spin-button {
             background-color: $red;
 
             &::before {
-                border-top: 11px solid $orange1;
+                border-top: 1.1rem solid $orange1;
             }
         }
     }
 }
 
 .fancybox-content {
-    padding: 0px;
+    padding: 0;
 }
 
 .nav__button {
     display: block;
 }
+
+.mCSB_container {
+    padding: 0 3.5rem 3.5rem 3.5rem;
+}
+
+// .mCSB_scrollTools mCSB_6_scrollbar mCS-dark mCSB_scrollTools_vertical {
+//     // ml40
+//     margin-left: 40px;
+// }
+
+// .mCSB_scrollTools {
+//     // ml40
+//     margin-left: 40px;
+// }
+
+// .mCSB_6_scrollbar {
+//     margin-left: 40px;
+// }
+
+// .mCS-dark {
+//     margin-left: 40px;
+// }
+
+// .mCSB_scrollTools_vertical {
+//     margin-left: 40px;
+// }
 
 // -------------------------------------------
 /*медия всегда должны быть в низу */

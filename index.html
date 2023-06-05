@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon"> -->
-    <title>Франчайзинг</title>
+    <title>Франчайзинг rem</title>
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -19,6 +19,7 @@
 
 <!-- заполнить блок с карточками -->
 <!-- сделать что бы нижний блок убиралмя при клике не на него -->
+<!-- вроде и h2 должен быть всегда -->
 
 <body>
     <header class="header">
@@ -342,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-              
+
                 <ul class="statistic">
                     <li class="statistic__item" style="background-image: url('../images/office.jpg');">
                         <div class="statistic__background"> </div>
@@ -432,7 +433,7 @@
                 </ul>
             </div>
         </section>
- 
+
         <section class="conditions">
             <h2 class="conditions__title title">
                 условия Вступления
@@ -506,7 +507,7 @@
                 <p> 17-18 m² минимум</p>
                 <p> трафиковая зона</p>
             </div>
- <!--
+
             <div class="packages" id="packages">
                 <div class="container">
                     <ul class="packages__items">
@@ -623,7 +624,7 @@
                                 </use>
                             </svg>
                             <span>Открыто</span>
-                            <!-- похоже контентные потому что на них анимация --
+                            <!-- похоже контентные потому что на них анимация -->
                         </div>
                         <div class="map-icons__box">
                             <svg class="map-icons__svg" width="32px" height="45px">
@@ -672,7 +673,7 @@
                                 <svg width="30px" height="32px" fill="#eb6924">
                                     <!-- подумать надо ли прописывать цвет
                                         если надо то прописать в svg файле
-                                     --
+                                    -->
                                     <use xlink:href="images/sprite.svg#cart">
                                     </use>
                                 </svg>
@@ -725,7 +726,7 @@
                 <div class="swiper-wrapper">
                     <div class=" swiper-slide">
                         <ul class="slider-content__items slider-content ">
-                            <!-- переделать в просто итемс --
+                            <!-- переделать в просто итемс -->
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
                                     <img class="slider-content__img" src="images/slider-content/1.png"
@@ -1003,7 +1004,7 @@
                         <ul class="slider-content__items slider-content ">
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
-                                    <!--проверить потом надо ли--
+                                    <!--проверить потом надо ли-->
                                     <img class="slider-content__img" src="images/slider-content/1.png"
                                         alt="Торцевая наружная вывеска">
                                 </div>
@@ -1017,7 +1018,7 @@
                                         </div>
                                         <div class="quantity-block">
                                             <button class="quantity-arrow-minus">
-                                                <svg class="social__svg" width="3px" height="5px" >
+                                                <svg class="social__svg" width="3px" height="5px">
                                                     <use xlink:href="images/sprite.svg#minus">
                                                     </use>
                                                 </svg>
@@ -1032,8 +1033,8 @@
                                             <span class="counter__thing">шт</span>
                                         </div>
                                         <button class="slider-content__cart" type="button">
-                                            <!--проверить правельность--
-                                            <svg class="social__svg" width="20px" height="20px" >
+                                            <!--проверить правельность-->
+                                            <svg class="social__svg" width="20px" height="20px">
                                                 <use xlink:href="images/sprite.svg#surface">
                                                 </use>
                                             </svg>
@@ -1083,7 +1084,7 @@
                         <ul class="slider-content__items slider-content ">
                             <li class="slider-content__item mix category-a ">
                                 <div class="slider-content__images">
-                                    <!--проверить потом надо ли--
+                                    <!--проверить потом надо ли-->
                                     <img class="slider-content__img" src="images/slider-content/1.png"
                                         alt="Торцевая наружная вывеска">
                                 </div>
@@ -1124,7 +1125,7 @@
                                                         </g>
                                                     </g>
                                                 </svg>
-                                                <!-- !!! заменить --
+                                                <!-- !!! заменить -->
                                             </button>
                                             <input class="quantity-num" type="number" value="1" />
                                             <button class="quantity-arrow-plus">
@@ -1161,7 +1162,7 @@
                                         </div>
 
                                         <button class="slider-content__cart" type="button">
-                                            <!--проверить правельность--
+                                            <!--проверить правельность-->
                                             <svg class="slider-content__svg" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px"
                                                 viewBox="0 0 20 20" version="1.1">
@@ -1223,15 +1224,14 @@
                     </div>
                 </div>
             </div>
-            </div>
-            <!--потом перепроверить сколько картинок удалить не нужные--
+            <!--потом перепроверить сколько картинок удалить не нужные-->
         </section>
 
         <section class="reviews">
             <h2 class="reviews__title title">отзывы</h2>
-            <!--подумать может картинки на фон--
+            <!--подумать может картинки на фон-->
             <div class="reviews__wrapper dragscroll">
-                <div class="reviews__inner">
+                <!-- <div class="reviews__inner">
                     <!-- inner скорей всего не нужен это итем --
                     <img class="reviews__img" src="images/reviews/reviews-1.jpg" alt="отзыв">
                     <div class="reviews__review ">
@@ -1267,12 +1267,47 @@
                             </p>
                         </div>
                     </div>
+                </div> -->
+                <div class="reviews__inner">
+                    <img class="reviews__img" src="images/reviews/reviews-1.jpg" alt="отзыв">
+                    <div class="reviews__review ">
+                        <h3 class="reviews__subtitle">Ирина Коваль</h3>
+                        <div class="reviews__adress">
+                            <!--у-->
+                            Join Up! в Киеве на ул. Борщаговская, 210
+                        </div>
+                        <div class="reviews__text content">
+                            <p>
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                                Лично для меня Join Up! to travel – это любовь во всех ее проявлениях. Это
+                                дружба,
+                                когда есть на кого положиться и есть уверенность, что ты не один. Это любимая
+                                работа,
+                                от которой ты, несмотря на усталость, получаешь удовольствие. Это именно тот
+                                случай,
+                                когда мечта сбылась.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="reviews__inner">
                     <div class="reviews__review ">
                         <h3 class="reviews__subtitle">Вячеслав Нездимовский</h3>
                         <div class="reviews__adress">
-                            <!--у--
+                            <!--у-->
                             Join Up! в Киеве на ул. Игната Юры, 20
                         </div>
                         <div class="reviews__text content">
@@ -1293,7 +1328,7 @@
                     <div class="reviews__review ">
                         <h3 class="reviews__subtitle">Ольга Кусик</h3>
                         <div class="reviews__adress">
-                            <!--у--
+                            <!--у-->
                             Join Up! в Кривом Роге по просп. Металлургов, 38
                         </div>
                         <div class="reviews__text content">
@@ -1316,7 +1351,7 @@
                     <div class="reviews__review ">
                         <h3 class="reviews__subtitle">Юлия Сидоренко</h3>
                         <div class="reviews__adress">
-                            <!--у--
+                            <!--у-->
                             Join Up! в Сумах на Покровской площади
                         </div>
                         <div class="reviews__text">
@@ -1340,7 +1375,7 @@
                     <div class="reviews__review scroller">
                         <h3 class="reviews__subtitle">Катерина Стерпул</h3>
                         <div class="reviews__adress">
-                            <!--у--
+                            <!--у-->
                             Join Up! в Кропивницком на ул. Чмиленко, 79
                         </div>
                         <div class="reviews__text content">
@@ -1361,7 +1396,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
         <section class="cooperation">
@@ -1374,9 +1408,9 @@
         </section>
 
         <section class="vacancies">
-            <!--стилизовать--
+            <!--стилизовать-->
             <div class="container">
-                <!-- <img class="vacancies__img" src="images/vacancy-bg.jpg" alt="черно белый фон из дерева"> --
+                <!-- <img class="vacancies__img" src="images/vacancy-bg.jpg" alt="черно белый фон из дерева"> -->
                 <div class="vacancies__background">
                     <div class="vacancies__content">
                         <h2 class="vacancies__title title">
@@ -1391,14 +1425,16 @@
                             <div class="vacancies__box">
                                 Менеджер по туризму
                             </div>
-                            <!-- <div class="div"> --
-                            <div class="vacancies__list hide">
+                            <!-- <div class="div"> -->
+
+                            <!-- <div class="vacancies__map"> -->
+                            <div class=" vacancies__list hide content">
                                 <!--  dragscroll content --
-                                <!-- vacancies-demo+  content dragscroll content только и за того что там это так называется--
+                                <!-- vacancies-demo+  content dragscroll content только и за того что там это так называется-->
                                 <h3 class="vacancies__subtitle">
                                     Обязанности:
                                 </h3>
-                                <ul class="vacancies__items">
+                                <ul class="vacancies__items ">
                                     <li>
                                         Качественная консультация по продукту компании (гостиничная база страны,
                                         специфика
@@ -1484,10 +1520,12 @@
                                         Отправить резюме
                                     </li>
                                 </ul>
-                                <!-- href="mailto:franchise@joinup.ua" --
+                            </div>
+                            <!-- href="mailto:franchise@joinup.ua" --
                                 <a class="vacancies__link" href="mailto:contact@franchise.com">Отправить резюме</a>
                             </div>
-                            <!-- </div> --
+                            <!-- </div> -->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -1605,12 +1643,12 @@
                 Copyright © Join UP! Все права защищены
             </div>
         </div>
-    </footer> -->
+    </footer>
 
-                <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBD1X6JKXHNxBDkAqnlkaFSRWMe7tg1mM">
-                </script>
-                <script src="js/main.min.js"></script>
-                <script src="js/modal.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBD1X6JKXHNxBDkAqnlkaFSRWMe7tg1mM">
+    </script>
+    <script src="js/main.min.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 

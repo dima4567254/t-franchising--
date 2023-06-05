@@ -1,13 +1,10 @@
- // для меню
- $('.menu__btn').on('click', function () {
-     $('.menu__items').toggleClass('menu__items--active');
+// для меню
+$('.menu__btn').on('click', function () {
+    $('.menu__items').toggleClass('menu__items--active');
 
-     /*$('.header__logo').toggleClass('menu__list--active');
-     $('.intro__btn').toggleClass('menu__list--active');*/
- });
-
-
-
+    /*$('.header__logo').toggleClass('menu__list--active');
+    $('.intro__btn').toggleClass('menu__list--active');*/
+});
 
 // инициализаци свайпер
 $(function name(params) {
@@ -28,7 +25,7 @@ $(function name(params) {
     // закрывать ,открывать кнтент 
     // $('.vacancies__box').on('click', function () {
     //     $('.vacancies__list').show();
-       
+// нет
     // });
 
     $('.vacancies__box').on('click', function () {

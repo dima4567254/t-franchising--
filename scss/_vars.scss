@@ -1,7 +1,8 @@
 $Rubik: 'Rubik',
 sans-serif;
 
-$pfsquaresanspro: 'pfsquaresanspro',sans-serif;
+$pfsquaresanspro: 'pfsquaresanspro',
+sans-serif;
 
 // $hover2: red;
 
@@ -32,7 +33,24 @@ $white10:#f3f3f3;
 
 
 
+$fz-small-2: 1.2rem; //tel x2
+$fz-small: 1.4rem; //x15
+$fz: 1.6rem; //x42
+$fz-subtitle: 1.8rem; //x2
+$fz-text: 2rem; //x1
+$fz-title: 2rem; //x2
+$fz-number2: 2.4rem; //x2
+$fz-sviper: 2.6rem; //x1
+$fz-title:2.8rem; //x2
+$fz-rate: 4.2rem; //x1
+$fz-big: 4.8rem; //tel x1
+$fz-number: 12rem; //x3
 
+
+
+
+// адаптив576
+$fz-title-x5:2.6rem;
 
 
 
@@ -65,13 +83,13 @@ $green3:#0cab46;
 $green4:#8aab64;
 
 // $section:50px;/*100*/
-$title-margin: 30px;
+$title-margin: 3rem;
 
-$padding-main:50px;
+$padding-main:5rem;
 // $padding-1200:60px;
-$padding-992:40px; //70
-$padding-768:30px; //50
-$padding-576:20px;
+$padding-992:4rem; //70
+$padding-768:3rem; //50
+$padding-576:2rem;
 
 // отступ между блоками 40px
 
@@ -116,3 +134,7 @@ $active: #fb0909;
 $ac: #fcd7b6;
 $green:#14B4BE;
 */
+
+@mixin line-height($font-size, $line-height, ) {
+    line-height: ($line-height / $font-size)
+}

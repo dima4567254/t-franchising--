@@ -22,27 +22,29 @@ modalWindow.addEventListener('click', (e) => {
     /*добовляем класс*/
 });
 
-// const buttonModal2 = document.querySelector('.vacancies__box');
-// // у добовляется класс
-// const modalWindow2 = document.querySelector('.vacancies__list');
+// -----------------------------------------------------------------------------
+// при клике  на
+const buttonModal2 = document.querySelector('.vacancies__box');
+// у добовляется класс
+const modalWindow2 = document.querySelector('.vacancies__list');
 
-// // modalWindow2.addEventListener('click', (e) => {
-// //     modalWindow2.classList.remove('active-modals');
-// //     // const isModal2 = e.target.closest('.modal__inner'); /*если клик в любое место кроме .modal__inner то окно закрывается */
-// //     // if (!isModal2) {
-// //     //     modalWindow2.classList.remove('active-modal');
-// //     // }
-// //     /*добовляем класс*/
-// // });
+/*addEventListenerпрослушиватель событий по нажатию левой кнопкой мышы*/
+buttonModal2.addEventListener('click', () => {
+    modalWindow2.classList.slideToggle('active'); /*добовляем класс*/
+    // document.onkeydown = function (event) {
+    //     if (event.keyCode == 27) {
+    //         modalWindow2.classList.remove('active');
+    //     }
+    // }
+});
 
-// buttonModal2.addEventListener('click', () => {
-//     modalWindow2.classList.remove('active-modals'); /*добовляем класс*/
-//     // document.onkeydown = function (event) {
-//     //     if (event.keyCode == 27) {
-//     //         modalWindow2.classList.remove('active-modal');
-//     //     }
-//     // }
-// });
+modalWindow2.addEventListener('click', (e) => {
+    const isModal2 = e.target.closest('.vacancies__list'); /*если клик в любое место кроме .modal__inner то окно закрывается */
+    if (!isModal2) {
+        modalWindow2.classList.remove('active');
+    }
+    /*добовляем класс*/
+});
 
 
 
